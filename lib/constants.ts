@@ -2,7 +2,7 @@
 
 export const EVENT_CONFIG = {
   name: "AI Vision Forum Paris 2026",
-  tagline: "Agents Shaping Tomorrow",
+  tagline: "Architecting Human-AI Synergy",
   date: "2026-05-05", // May 5, 2026
   dateDisplay: "May 5, 2026",
   location: {
