@@ -22,6 +22,19 @@ export function HeroSection() {
       {/* Three.js Particle Background */}
       <ParticleBackground />
 
+      {/* Paris Silhouette Background */}
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-1/3 text-purple-300 opacity-[0.08] pointer-events-none"
+        style={{
+          backgroundImage: `url('/ai-vision-forum-2026/images/paris-skyline.svg')`,
+          backgroundPosition: 'center bottom',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          maskImage: 'linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)'
+        }}
+      />
+
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background/95 to-secondary/10" />
 
