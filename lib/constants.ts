@@ -23,16 +23,17 @@ export const TRACKS = [
     title: "AI for Next-Gen Learning & Creative Pedagogy",
     icon: "🎓",
     description: "Reshaping education through generative AI and creative learning experiences",
-    color: "primary",
-    keywords: ["Education", "Creative Learning", "AI Pedagogy"]
+    color: "primary" as const,
+    keywords: ["Education", "Creative Learning", "AI Pedagogy"] as const,
+    highlight: false
   },
   {
     id: 2,
     title: "Vibe Coding & Agentic Open-Source Development",
     icon: "💻",
     description: "Featuring Cello project: autonomous coding agents, Rust rewrites, and the future of development",
-    color: "secondary",
-    keywords: ["Cello", "Autonomous Agents", "Open Source", "Rust"],
+    color: "secondary" as const,
+    keywords: ["Cello", "Autonomous Agents", "Open Source", "Rust"] as const,
     highlight: true // Featured track
   },
   {
@@ -40,16 +41,18 @@ export const TRACKS = [
     title: "Anticipatory Governance for Agentic AI",
     icon: "⚖️",
     description: "AI Act implementation, autonomous agent ethics, and governance frameworks",
-    color: "accent",
-    keywords: ["Governance", "Ethics", "AI Act", "Policy"]
+    color: "accent" as const,
+    keywords: ["Governance", "Ethics", "AI Act", "Policy"] as const,
+    highlight: false
   },
   {
     id: 4,
     title: "Agentic Open Source Foundations & AI as Global Public Good",
     icon: "🌍",
     description: "Multi-stakeholder collaboration, digital public goods, and AI for humanity",
-    color: "primary",
-    keywords: ["Open Source", "Public Good", "Collaboration", "Foundation Models"]
+    color: "primary" as const,
+    keywords: ["Open Source", "Public Good", "Collaboration", "Foundation Models"] as const,
+    highlight: false
   }
 ] as const;
 
