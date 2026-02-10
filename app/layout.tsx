@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { EVENT_CONFIG } from "@/lib/constants";
+import { Header } from "@/components/navigation/Header";
+import { Footer } from "@/components/navigation/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -45,7 +47,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} font-sans antialiased`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
