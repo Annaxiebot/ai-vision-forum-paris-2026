@@ -43,8 +43,8 @@ AI Vision Forum Paris 2026 is a premier invitation-only event co-located with GO
 
 ```bash
 # Clone the repository
-git clone https://github.com/annaxiebot/ai-vision-forum-2026.git
-cd ai-vision-forum-2026
+git clone https://github.com/annaxiebot/ai-vision-forum-paris-2026.git
+cd ai-vision-forum-paris-2026
 
 # Install dependencies
 npm install
@@ -62,7 +62,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ### Project Structure
 
 ```
-ai-vision-forum-2026/
+ai-vision-forum-paris-2026/
 ├── app/                  # Next.js App Router pages
 │   ├── page.tsx          # Home page (hero + overview)
 │   ├── theme/            # Four tracks detail

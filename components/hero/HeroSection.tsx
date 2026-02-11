@@ -27,7 +27,7 @@ export function HeroSection() {
         className="absolute bottom-0 left-0 right-0 pointer-events-none z-[1]"
         style={{
           height: '40%',
-          backgroundImage: `url('/ai-vision-forum-2026/images/paris-skyline.svg')`,
+          backgroundImage: `url('/ai-vision-forum-paris-2026/images/paris-skyline.svg')`,
           backgroundPosition: 'center bottom',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
