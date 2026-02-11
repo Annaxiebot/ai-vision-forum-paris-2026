@@ -24,9 +24,9 @@ export function HeroSection() {
 
       {/* Paris Silhouette Background */}
       <div 
-        className="absolute bottom-0 left-0 right-0 h-2/5 text-purple-200 opacity-[0.18] pointer-events-none z-[1]"
+        className="absolute bottom-0 left-0 right-0 h-2/5 text-purple-200 opacity-[0.20] pointer-events-none z-[1]"
         style={{
-          backgroundImage: `url('/ai-vision-forum-2026/images/paris-skyline.svg')`,
+          backgroundImage: `url('${process.env.NODE_ENV === 'production' ? '/ai-vision-forum-2026' : ''}/images/paris-skyline.svg')`,
           backgroundPosition: 'center bottom',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
