@@ -20,7 +20,7 @@ export const EVENT_CONFIG = {
 export const TRACKS = [
   {
     id: 1,
-    title: "AI for Next-Gen Learning & Creative Pedagogy",
+    title: "AI for Education & Creativity",
     icon: "🎓",
     description: "Reshaping education through generative AI and creative learning experiences",
     color: "primary" as const,
@@ -38,7 +38,7 @@ export const TRACKS = [
   },
   {
     id: 3,
-    title: "Anticipatory Governance for Agentic AI",
+    title: "Governing Autonomous AI",
     icon: "⚖️",
     description: "AI Act implementation, autonomous agent ethics, and governance frameworks",
     color: "accent" as const,
