@@ -31,8 +31,7 @@ export function HeroSection() {
           backgroundPosition: 'center bottom',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
-          opacity: 0.4,
-          color: '#a78bfa'
+          opacity: 0.3
         }}
       />
 
