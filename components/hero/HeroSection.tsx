@@ -24,19 +24,19 @@ export function HeroSection() {
 
       {/* Paris Silhouette Background */}
       <div 
-        className="absolute bottom-0 left-0 right-0 h-1/3 text-purple-300 opacity-[0.08] pointer-events-none"
+        className="absolute bottom-0 left-0 right-0 h-2/5 text-purple-200 opacity-[0.18] pointer-events-none z-[1]"
         style={{
           backgroundImage: `url('/ai-vision-forum-2026/images/paris-skyline.svg')`,
           backgroundPosition: 'center bottom',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          maskImage: 'linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)',
-          WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)'
+          maskImage: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)'
         }}
       />
 
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background/95 to-secondary/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background/95 to-secondary/10 z-[2]" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-6xl text-center">
