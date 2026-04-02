@@ -185,11 +185,7 @@ export default function Home() {
           <div className="rounded-3xl border-2 border-accent/50 bg-gradient-to-br from-accent/10 via-primary/5 to-secondary/10 p-12 md:p-16">
             <h2 className="mb-6 text-3xl font-bold md:text-4xl lg:text-5xl">{t.cta.title}</h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">{t.cta.description}</p>
-            <a href="https://cfp.gosim.org/" target="_blank" rel="noopener noreferrer"
-              className="inline-block rounded-full bg-accent px-10 py-5 text-xl font-bold text-accent-foreground transition-all hover:scale-105 hover:shadow-2xl hover:shadow-accent/40">
-              {t.cta.button}
-            </a>
-            <p className="mt-6 text-sm text-muted-foreground">{t.cta.note}</p>
+            <p className="text-muted-foreground">{t.cta.note}</p>
           </div>
         </div>
       </section>

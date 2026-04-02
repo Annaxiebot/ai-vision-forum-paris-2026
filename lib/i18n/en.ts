@@ -15,7 +15,7 @@ export const en: Translations = {
     tagline: "Architecting Human-AI Synergy",
     dateDisplay: "Monday, May 4, 2026",
     colocatedWith: "Co-located with",
-    requestInvitation: "Request Invitation",
+    requestInvitation: "Learn More",
     learnMore: "Learn More",
     invitationOnly: "Invitation-only",
     chathamHouseRule: "Chatham House Rule",
@@ -122,7 +122,7 @@ export const en: Translations = {
     subtitle: "World-class experts, researchers, and practitioners",
     comingSoon: "Speakers Coming Soon",
     comingSoonDescription: "We're curating an exceptional lineup of thought leaders, academics, and industry pioneers to address the structural shifts shaping agentic AI.",
-    comingSoonNote: "Check back soon or request an invitation to be notified when speakers are announced.",
+    comingSoonNote: "Speaker lineup will be announced soon.",
   },
 
   aosfSection: {
@@ -157,10 +157,10 @@ export const en: Translations = {
   },
 
   cta: {
-    title: "Join the Conversation",
-    description: "AI Vision Forum Paris 2026 is invitation-only. Request your invitation to participate in shaping the future of agentic AI.",
-    button: "Request Invitation",
-    note: "Applications reviewed on a rolling basis",
+    title: "Invitation-Only Event",
+    description: "AI Vision Forum Paris 2026 brings together strategic leaders to shape the future of agentic AI.",
+    button: "",
+    note: "More details coming soon.",
   },
 
   footer: {
