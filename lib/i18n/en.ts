@@ -101,7 +101,7 @@ export const en: Translations = {
   scheduleSection: {
     title: "Schedule",
     subtitle: "A full day of insights, discussions, and networking",
-    note: "* Schedule from v4.0 planning document. Final agenda will be shared with confirmed participants.",
+    note: "",
     items: [
       { time: "08:30–09:00", title: "Registration & Coffee" },
       { time: "09:00–09:15", title: "Opening Remarks" },
