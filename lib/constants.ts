@@ -123,8 +123,9 @@ export const AOSF_INFO = {
   name: "Agentic Open Source Foundation",
   tagline: "The Linux Foundation for the Agentic Stack",
   description: "If LAMP made web applications possible, AOSF makes autonomous intelligence trustworthy. AOSF governs what LAMP never needed.",
-  url: "https://aosf-org.github.io",
+  url: "https://aosf.ai",
   github: "https://github.com/aosf-org",
+  openTokenUrl: "https://open-token.org/",
   governanceAreas: [
     { title: "Intent (意图)", description: "Goal alignment — ensuring AI agents pursue objectives aligned with human values across multi-agent systems." },
     { title: "Agents (代理)", description: "Trust protocols — authentication, capability certification, and identity verification for AI agents." },

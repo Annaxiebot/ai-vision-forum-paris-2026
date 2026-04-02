@@ -16,6 +16,14 @@ export default function PublicGoodTrack() {
       keyTopics={t.trackPublicGood.keyTopics}
       resources={[
         {
+          title: "Open Token",
+          url: "https://open-token.org/",
+        },
+        {
+          title: "AOSF (Agentic Open Source Foundation)",
+          url: "https://aosf.ai/",
+        },
+        {
           title: "Digital Public Goods Alliance",
           url: "https://digitalpublicgoods.net/",
         },
