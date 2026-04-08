@@ -111,7 +111,7 @@ export default function ContactPage() {
             <h2 className="mb-6 text-2xl font-bold">{t.contactPage.quickLinks}</h2>
             <nav className="space-y-4">
               <a
-                href="https://cfp.gosim.org/"
+                href="https://register.gosim.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block rounded-lg border border-border bg-background p-4 font-medium transition-all hover:border-accent hover:bg-accent/5"

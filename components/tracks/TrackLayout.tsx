@@ -153,7 +153,7 @@ export function TrackLayout({
               {t.trackDetail.requestInvitationToJoin}
             </p>
             <a
-              href="https://cfp.gosim.org/"
+              href="https://register.gosim.org/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-full bg-accent px-8 py-4 font-semibold text-accent-foreground transition-all hover:scale-105 hover:shadow-xl hover:shadow-accent/30"

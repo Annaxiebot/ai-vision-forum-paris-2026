@@ -21,7 +21,7 @@ export function Header() {
     { label: t.nav.schedule, href: "/#schedule", highlight: false },
     { label: t.nav.speakers, href: "/#speakers", highlight: false },
     { label: t.nav.venue, href: "/#venue", highlight: false },
-    { label: t.nav.register, href: "https://cfp.gosim.org/", highlight: true, external: true },
+    { label: t.nav.register, href: "https://register.gosim.org/", highlight: true, external: true },
   ];
 
   useEffect(() => {
