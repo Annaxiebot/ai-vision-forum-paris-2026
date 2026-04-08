@@ -15,26 +15,26 @@ const TRACK_ICONS: Record<string, React.ReactNode> = {
 };
 
 const PANELIST_ORGS = [
-  { name: "Google DeepMind", domain: "deepmind.com" },
-  { name: "ZhipuAI", domain: "zhipuai.cn" },
-  { name: "Moonshot AI", domain: "moonshot.cn" },
-  { name: "Minimax", domain: "minimaxi.com" },
-  { name: "BAAI", domain: "baai.ac.cn" },
-  { name: "CSDN", domain: "csdn.net" },
-  { name: "LF AI & Data", domain: "lfaidata.foundation" },
-  { name: "Rust Foundation", domain: "rustfoundation.org" },
-  { name: "Kaiyuanshe", domain: "kaiyuanshe.cn" },
-  { name: "CNRS", domain: "cnrs.fr" },
-  { name: "Fudan University", domain: "fudan.edu.cn" },
-  { name: "Tulane University", domain: "tulane.edu" },
-  { name: "McGill University", domain: "mcgill.ca" },
-  { name: "BNBU", domain: "bnbu.edu.cn" },
-  { name: "SOLEIL Synchrotron", domain: "synchrotron-soleil.fr" },
-  { name: "United Nations University", domain: "unu.edu" },
-  { name: "Chinese Academy of Social Sciences", domain: "cass.net.cn" },
-  { name: "China Electronics Standardization Institute", domain: "cesi.cn" },
-  { name: "FairMind", domain: "fairmind.ai" },
-  { name: "Egen AI", domain: "egen.ai" },
+  { name: "Google DeepMind", logo: "/images/orgs/google-deepmind.png" },
+  { name: "ZhipuAI", logo: "/images/orgs/zhipuai.png" },
+  { name: "Moonshot AI", logo: "/images/orgs/moonshot-ai.png" },
+  { name: "Minimax", logo: "/images/orgs/minimax.png" },
+  { name: "BAAI", logo: "/images/orgs/baai.png" },
+  { name: "CSDN", logo: "/images/orgs/csdn.png" },
+  { name: "LF AI & Data", logo: "/images/orgs/lf-ai-data.svg" },
+  { name: "Rust Foundation", logo: "/images/orgs/rust-foundation.png" },
+  { name: "Kaiyuanshe", logo: "/images/orgs/kaiyuanshe.svg" },
+  { name: "CNRS", logo: "/images/orgs/cnrs.png" },
+  { name: "Fudan University", logo: "/images/orgs/fudan.svg" },
+  { name: "Tulane University", logo: "/images/orgs/tulane.png" },
+  { name: "McGill University", logo: "/images/orgs/mcgill.png" },
+  { name: "BNBU", logo: "/images/orgs/bnbu.png" },
+  { name: "SOLEIL Synchrotron", logo: "/images/orgs/soleil.png" },
+  { name: "United Nations University", logo: "/images/orgs/unu.png" },
+  { name: "Chinese Academy of Social Sciences", logo: "/images/orgs/cass.svg" },
+  { name: "China Electronics Standardization Institute", logo: "/images/orgs/cesi.svg" },
+  { name: "FairMind", logo: "/images/orgs/fairmind.svg" },
+  { name: "Egen AI", logo: "/images/orgs/egen.svg" },
 ];
 
 const TRACK_ICON_KEYS = ["laptop", "graduation-cap", "scale", "globe"];
@@ -172,24 +172,10 @@ export default function Home() {
               >
                 <div className="flex h-12 w-full items-center justify-center">
                   <img
-                    src={`https://logo.clearbit.com/${org.domain}?size=80`}
+                    src={org.logo}
                     alt={org.name}
-                    className="h-10 max-w-[100px] object-contain"
-                    onError={(e) => {
-                      const img = e.currentTarget;
-                      img.style.display = "none";
-                      const fallback = img.nextElementSibling as HTMLElement;
-                      if (fallback) fallback.style.display = "flex";
-                    }}
+                    className="h-10 max-w-[120px] object-contain"
                   />
-                  <div
-                    style={{ display: "none" }}
-                    className="h-10 w-10 items-center justify-center rounded-lg bg-primary/10"
-                  >
-                    <span className="text-base font-bold text-primary">
-                      {org.name[0]}
-                    </span>
-                  </div>
                 </div>
                 <span className="text-center text-xs font-medium text-muted-foreground leading-tight">
                   {org.name}
