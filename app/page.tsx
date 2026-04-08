@@ -32,9 +32,9 @@ const PANELIST_ORGS = [
   { name: "BNBU", logo: "/images/orgs/bnbu.png", url: "https://bnbu.edu.cn" },
   { name: "SOLEIL Synchrotron", logo: "/images/orgs/soleil.png", url: "https://synchrotron-soleil.fr" },
   { name: "United Nations University", logo: "/images/orgs/unu.png", url: "https://unu.edu" },
-  { name: "Chinese Academy of Social Sciences", logo: "/images/orgs/cass.svg", url: "https://cass.net.cn" },
-  { name: "China Electronics Standardization Institute", logo: "/images/orgs/cesi.svg", url: "https://cesi.cn" },
-  { name: "Egen AI", logo: "/images/orgs/egen.svg", url: "https://egen.ai" },
+  { name: "Chinese Academy of Social Sciences", logo: "/images/orgs/cass.png", url: "https://cssn.cn" },
+  { name: "China Electronics Standardization Institute", logo: "/images/orgs/cesi.png", url: "https://csa-iot.org/member/china-electronics-standardization-institute/" },
+  { name: "Egen AI", logo: "/images/orgs/egen.png", url: "https://egen.ai" },
 ];
 
 const TRACK_ICON_KEYS = ["laptop", "graduation-cap", "scale", "globe"];
