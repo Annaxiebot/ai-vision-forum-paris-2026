@@ -22,7 +22,7 @@ const PANELIST_ORGS = [
   { name: "BAAI", logo: "/images/orgs/baai.png" },
   { name: "CSDN", logo: "/images/orgs/csdn.png" },
   { name: "LF AI & Data", logo: "/images/orgs/lf-ai-data.svg" },
-  { name: "Rust Foundation", logo: "/images/orgs/rust-foundation.svg" },
+  { name: "Rust Foundation", logo: "/images/orgs/rust-foundation.png" },
   { name: "Kaiyuanshe", logo: "/images/orgs/kaiyuanshe.svg" },
   { name: "CNRS", logo: "/images/orgs/cnrs.png" },
   { name: "Fudan University", logo: "/images/orgs/fudan.svg" },
