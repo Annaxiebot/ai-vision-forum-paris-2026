@@ -125,6 +125,11 @@ export const en: Translations = {
     comingSoonNote: "Speaker lineup will be announced soon.",
   },
 
+  panelistsSection: {
+    title: "Panelists Representing",
+    subtitle: "Our panelists come from leading universities, research labs, open-source foundations, and AI companies shaping the agentic AI landscape.",
+  },
+
   aosfSection: {
     title: "AOSF: Governance for the Agentic Era",
     subtitle: "The Linux Foundation for the Agentic Stack",

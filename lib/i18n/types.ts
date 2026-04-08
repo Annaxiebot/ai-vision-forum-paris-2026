@@ -82,6 +82,12 @@ export interface Translations {
     comingSoonNote: string;
   };
 
+  // Panelists Representing Section
+  panelistsSection: {
+    title: string;
+    subtitle: string;
+  };
+
   // AOSF Section
   aosfSection: {
     title: string;

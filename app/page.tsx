@@ -14,6 +14,29 @@ const TRACK_ICONS: Record<string, React.ReactNode> = {
   "globe": <Globe className="h-12 w-12 text-primary" />,
 };
 
+const PANELIST_ORGS = [
+  { name: "Google DeepMind", domain: "deepmind.com" },
+  { name: "ZhipuAI", domain: "zhipuai.cn" },
+  { name: "Moonshot AI", domain: "moonshot.cn" },
+  { name: "Minimax", domain: "minimaxi.com" },
+  { name: "BAAI", domain: "baai.ac.cn" },
+  { name: "CSDN", domain: "csdn.net" },
+  { name: "LF AI & Data", domain: "lfaidata.foundation" },
+  { name: "Rust Foundation", domain: "rustfoundation.org" },
+  { name: "Kaiyuanshe", domain: "kaiyuanshe.cn" },
+  { name: "CNRS", domain: "cnrs.fr" },
+  { name: "Fudan University", domain: "fudan.edu.cn" },
+  { name: "Tulane University", domain: "tulane.edu" },
+  { name: "McGill University", domain: "mcgill.ca" },
+  { name: "BNBU", domain: "bnbu.edu.cn" },
+  { name: "SOLEIL Synchrotron", domain: "synchrotron-soleil.fr" },
+  { name: "United Nations University", domain: "unu.edu" },
+  { name: "Chinese Academy of Social Sciences", domain: "cass.net.cn" },
+  { name: "China Electronics Standardization Institute", domain: "cesi.cn" },
+  { name: "FairMind", domain: "fairmind.ai" },
+  { name: "Egen AI", domain: "egen.ai" },
+];
+
 const TRACK_ICON_KEYS = ["laptop", "graduation-cap", "scale", "globe"];
 const TRACK_SLUGS = ["vibe-coding", "education", "governance", "public-good"];
 const TRACK_HIGHLIGHTS = [true, false, false, false];
@@ -125,6 +148,54 @@ export default function Home() {
               <p className="text-muted-foreground">{t.speakersSection.comingSoonDescription}</p>
               <p className="mt-4 text-sm text-muted-foreground">{t.speakersSection.comingSoonNote}</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Panelists Representing Section */}
+      <section className="py-24 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl">
+              <span className="text-gradient-primary">{t.panelistsSection.title}</span>
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-muted-foreground md:text-xl">
+              {t.panelistsSection.subtitle}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:gap-6">
+            {PANELIST_ORGS.map((org) => (
+              <div
+                key={org.name}
+                className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-4 transition-colors hover:border-primary"
+              >
+                <div className="flex h-12 w-full items-center justify-center">
+                  <img
+                    src={`https://logo.clearbit.com/${org.domain}?size=80`}
+                    alt={org.name}
+                    className="h-10 max-w-[100px] object-contain"
+                    onError={(e) => {
+                      const img = e.currentTarget;
+                      img.style.display = "none";
+                      const fallback = img.nextElementSibling as HTMLElement;
+                      if (fallback) fallback.style.display = "flex";
+                    }}
+                  />
+                  <div
+                    style={{ display: "none" }}
+                    className="h-10 w-10 items-center justify-center rounded-lg bg-primary/10"
+                  >
+                    <span className="text-base font-bold text-primary">
+                      {org.name[0]}
+                    </span>
+                  </div>
+                </div>
+                <span className="text-center text-xs font-medium text-muted-foreground leading-tight">
+                  {org.name}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -125,6 +125,11 @@ export const cn: Translations = {
     comingSoonNote: "请持续关注或申请邀请以在嘉宾公布时获得通知。",
   },
 
+  panelistsSection: {
+    title: "嘉宾所代表的机构",
+    subtitle: "我们的小组成员来自顶尖大学、研究机构、开源基金会和引领智能代理 AI 发展的人工智能企业。",
+  },
+
   aosfSection: {
     title: "AOSF：智能代理时代的治理框架",
     subtitle: "智能代理堆栈的 Linux 基金会",

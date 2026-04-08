@@ -125,6 +125,11 @@ export const fr: Translations = {
     comingSoonNote: "Revenez bientôt ou demandez une invitation pour être notifié de l'annonce des intervenants.",
   },
 
+  panelistsSection: {
+    title: "Les panélistes représentent",
+    subtitle: "Nos panélistes viennent d'universités de premier plan, de laboratoires de recherche, de fondations open source et d'entreprises d'IA façonnant le paysage de l'IA agentique.",
+  },
+
   aosfSection: {
     title: "AOSF : Gouvernance pour l'ère agentique",
     subtitle: "La Linux Foundation pour la pile agentique",
