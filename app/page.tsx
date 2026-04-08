@@ -14,9 +14,9 @@ const TRACK_ICONS: Record<string, React.ReactNode> = {
   "globe": <Globe className="h-12 w-12 text-primary" />,
 };
 
-const TRACK_ICON_KEYS = ["graduation-cap", "laptop", "scale", "globe"];
-const TRACK_SLUGS = ["education", "vibe-coding", "governance", "public-good"];
-const TRACK_HIGHLIGHTS = [false, true, false, false];
+const TRACK_ICON_KEYS = ["laptop", "graduation-cap", "scale", "globe"];
+const TRACK_SLUGS = ["vibe-coding", "education", "governance", "public-good"];
+const TRACK_HIGHLIGHTS = [true, false, false, false];
 
 export default function Home() {
   const { t } = useTranslation();
