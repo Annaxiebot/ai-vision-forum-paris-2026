@@ -35,6 +35,7 @@ const PANELIST_ORGS = [
   { name: "China Electronics Standardization Institute", logo: "/images/orgs/cesi.svg" },
   { name: "FairMind", logo: "/images/orgs/fairmind.svg" },
   { name: "Egen AI", logo: "/images/orgs/egen.svg" },
+  { name: "Probabl", logo: "/images/orgs/probabl.png" },
 ];
 
 const TRACK_ICON_KEYS = ["laptop", "graduation-cap", "scale", "globe"];
