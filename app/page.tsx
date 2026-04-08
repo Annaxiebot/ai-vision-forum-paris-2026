@@ -15,27 +15,26 @@ const TRACK_ICONS: Record<string, React.ReactNode> = {
 };
 
 const PANELIST_ORGS = [
-  { name: "Google DeepMind", logo: "/images/orgs/google-deepmind.png" },
-  { name: "ZhipuAI", logo: "/images/orgs/zhipuai.png" },
-  { name: "Moonshot AI", logo: "/images/orgs/moonshot-ai.png" },
-  { name: "Minimax", logo: "/images/orgs/minimax.png" },
-  { name: "BAAI", logo: "/images/orgs/baai.png" },
-  { name: "CSDN", logo: "/images/orgs/csdn.png" },
-  { name: "LF AI & Data", logo: "/images/orgs/lf-ai-data.svg" },
-  { name: "Rust Foundation", logo: "/images/orgs/rust-foundation.png" },
-  { name: "Kaiyuanshe", logo: "/images/orgs/kaiyuanshe.svg" },
-  { name: "CNRS", logo: "/images/orgs/cnrs.png" },
-  { name: "Fudan University", logo: "/images/orgs/fudan.svg" },
-  { name: "Tulane University", logo: "/images/orgs/tulane.png" },
-  { name: "McGill University", logo: "/images/orgs/mcgill.png" },
-  { name: "BNBU", logo: "/images/orgs/bnbu.png" },
-  { name: "SOLEIL Synchrotron", logo: "/images/orgs/soleil.png" },
-  { name: "United Nations University", logo: "/images/orgs/unu.png" },
-  { name: "Chinese Academy of Social Sciences", logo: "/images/orgs/cass.svg" },
-  { name: "China Electronics Standardization Institute", logo: "/images/orgs/cesi.svg" },
-  { name: "FairMind", logo: "/images/orgs/fairmind.svg" },
-  { name: "Egen AI", logo: "/images/orgs/egen.svg" },
-  { name: "Probabl", logo: "/images/orgs/probabl.png" },
+  { name: "Google DeepMind", logo: "/images/orgs/google-deepmind.png", url: "https://deepmind.google" },
+  { name: "Probabl", logo: "/images/orgs/probabl.png", url: "https://probabl.ai" },
+  { name: "ZhipuAI", logo: "/images/orgs/zhipuai.png", url: "https://zhipuai.cn" },
+  { name: "Moonshot AI", logo: "/images/orgs/moonshot-ai.png", url: "https://moonshot.cn" },
+  { name: "Minimax", logo: "/images/orgs/minimax.png", url: "https://minimaxi.com" },
+  { name: "BAAI", logo: "/images/orgs/baai.png", url: "https://baai.ac.cn" },
+  { name: "CSDN", logo: "/images/orgs/csdn.png", url: "https://csdn.net" },
+  { name: "LF AI & Data", logo: "/images/orgs/lf-ai-data.svg", url: "https://lfaidata.foundation" },
+  { name: "Rust Foundation", logo: "/images/orgs/rust-foundation.png", url: "https://rustfoundation.org" },
+  { name: "Kaiyuanshe", logo: "/images/orgs/kaiyuanshe.svg", url: "https://kaiyuanshe.cn" },
+  { name: "CNRS", logo: "/images/orgs/cnrs.png", url: "https://cnrs.fr" },
+  { name: "Fudan University", logo: "/images/orgs/fudan.svg", url: "https://fudan.edu.cn" },
+  { name: "Tulane University", logo: "/images/orgs/tulane.png", url: "https://tulane.edu" },
+  { name: "McGill University", logo: "/images/orgs/mcgill.png", url: "https://mcgill.ca" },
+  { name: "BNBU", logo: "/images/orgs/bnbu.png", url: "https://bnbu.edu.cn" },
+  { name: "SOLEIL Synchrotron", logo: "/images/orgs/soleil.png", url: "https://synchrotron-soleil.fr" },
+  { name: "United Nations University", logo: "/images/orgs/unu.png", url: "https://unu.edu" },
+  { name: "Chinese Academy of Social Sciences", logo: "/images/orgs/cass.svg", url: "https://cass.net.cn" },
+  { name: "China Electronics Standardization Institute", logo: "/images/orgs/cesi.svg", url: "https://cesi.cn" },
+  { name: "Egen AI", logo: "/images/orgs/egen.svg", url: "https://egen.ai" },
 ];
 
 const TRACK_ICON_KEYS = ["laptop", "graduation-cap", "scale", "globe"];
@@ -159,6 +158,7 @@ export default function Home() {
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl">
               <span className="text-gradient-primary">{t.panelistsSection.title}</span>
+              <span className="ml-3 align-middle text-lg font-normal text-muted-foreground">(Partial)</span>
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-muted-foreground md:text-xl">
               {t.panelistsSection.subtitle}
@@ -167,8 +167,11 @@ export default function Home() {
 
           <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:gap-6">
             {PANELIST_ORGS.map((org) => (
-              <div
+              <a
                 key={org.name}
+                href={org.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-4 transition-colors hover:border-primary"
               >
                 <div className="flex h-12 w-full items-center justify-center">
@@ -181,7 +184,7 @@ export default function Home() {
                 <span className="text-center text-xs font-medium text-muted-foreground leading-tight">
                   {org.name}
                 </span>
-              </div>
+              </a>
             ))}
           </div>
         </div>
