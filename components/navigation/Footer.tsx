@@ -56,14 +56,6 @@ export function Footer() {
                   {t.footer.schedule}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/#speakers"
-                  className="text-muted-foreground transition-colors hover:text-primary"
-                >
-                  {t.footer.speakers}
-                </Link>
-              </li>
             </ul>
           </div>
 

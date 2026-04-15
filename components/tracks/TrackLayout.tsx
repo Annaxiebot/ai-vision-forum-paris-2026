@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Users, BookOpen } from "lucide-react";
+import { ArrowLeft, BookOpen } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 
 interface TrackLayoutProps {
@@ -75,41 +75,6 @@ export function TrackLayout({
         </div>
       </section>
 
-      {/* Speakers */}
-      <section className="py-16 px-4 bg-card/50">
-        <div className="container mx-auto max-w-4xl">
-          <div className="mb-8 flex items-center gap-3">
-            <Users className="h-6 w-6 text-primary" />
-            <h2 className="text-3xl font-bold">{t.trackDetail.featuredSpeakers}</h2>
-          </div>
-
-          {speakers.length > 0 ? (
-            <div className="grid gap-6 md:grid-cols-2">
-              {speakers.map((speaker, index) => (
-                <div
-                  key={index}
-                  className="rounded-lg border border-border bg-card p-6"
-                >
-                  <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary to-secondary text-lg font-bold text-primary-foreground">
-                    {speaker.name.split(" ").map((n) => n[0]).join("")}
-                  </div>
-                  <h3 className="mb-1 text-lg font-semibold">{speaker.name}</h3>
-                  <p className="text-sm text-muted-foreground">{speaker.title}</p>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="rounded-lg border border-dashed border-border bg-card/50 p-12 text-center">
-              <p className="text-lg text-muted-foreground">
-                {t.trackDetail.speakersComingSoon}
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {t.trackDetail.speakersCurating}
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
 
       {/* Custom Content */}
       {children && (

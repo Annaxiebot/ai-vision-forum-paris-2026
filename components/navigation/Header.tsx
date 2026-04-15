@@ -19,7 +19,6 @@ export function Header() {
     { label: t.nav.home, href: "/", highlight: false },
     { label: t.nav.tracks, href: "/#tracks", highlight: false },
     { label: t.nav.schedule, href: "/#schedule", highlight: false },
-    { label: t.nav.speakers, href: "/#speakers", highlight: false },
     { label: t.nav.venue, href: "/#venue", highlight: false },
     { label: t.nav.register, href: "https://register.gosim.org/", highlight: true, external: true },
   ];

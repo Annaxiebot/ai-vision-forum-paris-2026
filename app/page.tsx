@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { GraduationCap, Laptop, Scale, Globe, Mic, Landmark, Handshake, Plane, TowerControl } from "lucide-react";
+import { GraduationCap, Laptop, Scale, Globe, Landmark, Handshake, Plane, TowerControl } from "lucide-react";
 import { HeroSection } from "@/components/hero/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { EVENT_CONFIG } from "@/lib/constants";
@@ -131,26 +131,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Speakers Section */}
-      <section id="speakers" className="py-24 px-4" style={{ background: "linear-gradient(180deg, rgba(202, 124, 129, 0.06) 0%, rgba(202, 124, 129, 0.03) 50%, transparent 100%)" }}>
-        <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl">
-            <span className="text-gradient-primary">{t.speakersSection.title}</span>
-          </h2>
-          <p className="mx-auto mb-12 max-w-3xl text-lg text-muted-foreground md:text-xl">
-            {t.speakersSection.subtitle}
-          </p>
-
-          <div className="rounded-2xl border border-dashed border-border bg-card/50 p-16">
-            <div className="mx-auto max-w-2xl">
-              <div className="mb-6"><Mic className="mx-auto h-14 w-14 text-primary" /></div>
-              <h3 className="mb-4 text-2xl font-bold">{t.speakersSection.comingSoon}</h3>
-              <p className="text-muted-foreground">{t.speakersSection.comingSoonDescription}</p>
-              <p className="mt-4 text-sm text-muted-foreground">{t.speakersSection.comingSoonNote}</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Panelists Representing Section */}
       <section className="py-24 px-4">
