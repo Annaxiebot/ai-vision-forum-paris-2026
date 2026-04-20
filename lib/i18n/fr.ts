@@ -104,7 +104,7 @@ export const fr: Translations = {
     note: "* Programme issu du document de planification v4.0. L'agenda définitif sera partagé avec les participants confirmés.",
     items: [
       { time: "09:00–09:30", title: "Accueil & Café" },
-      { time: "09:30–09:45", title: "Discours d'ouverture" },
+      { time: "09:30–09:45", title: "Mot d'ouverture & Keynote" },
       { time: "09:45–11:15", title: "Panel 1 : Systèmes d'IA agentique", subtitle: "Claw Stack, symbiose Humain-IA", format: "Keynote + table ronde" },
       { time: "11:15–11:30", title: "Pause" },
       { time: "11:30–13:00", title: "Panel 2 : IA agentique dans l'éducation", subtitle: "Apprentissage & Créativité", format: "Keynote + table ronde" },

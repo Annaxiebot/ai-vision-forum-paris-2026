@@ -104,7 +104,7 @@ export const en: Translations = {
     note: "",
     items: [
       { time: "09:00–09:30", title: "Registration & coffee" },
-      { time: "09:30–09:45", title: "Opening remarks" },
+      { time: "09:30–09:45", title: "Opening Remarks & Keynote" },
       { time: "09:45–11:15", title: "Panel 1: Agentic AI systems", subtitle: "Claw Stack, Human–AI Symbiosis", format: "Keynote + Panel" },
       { time: "11:15–11:30", title: "Break" },
       { time: "11:30–13:00", title: "Panel 2: Agentic AI in education", subtitle: "Learning & Creativity", format: "Keynote + Panel" },

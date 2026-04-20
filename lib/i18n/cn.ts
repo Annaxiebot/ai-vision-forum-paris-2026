@@ -104,7 +104,7 @@ export const cn: Translations = {
     note: "* 来自 v4.0 规划文档的日程。最终议程将与确认的参与者分享。",
     items: [
       { time: "09:00–09:30", title: "签到 & 咖啡" },
-      { time: "09:30–09:45", title: "开幕致辞" },
+      { time: "09:30–09:45", title: "开幕致辞 & 主题演讲" },
       { time: "09:45–11:15", title: "圆桌1：智能代理 AI 系统", subtitle: "Claw 堆栈，人机协同", format: "主题演讲 + 圆桌" },
       { time: "11:15–11:30", title: "休息" },
       { time: "11:30–13:00", title: "圆桌2：智能代理 AI 与教育", subtitle: "学习与创造力", format: "主题演讲 + 圆桌" },
