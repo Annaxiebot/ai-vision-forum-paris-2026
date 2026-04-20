@@ -30,7 +30,7 @@ const PANELIST_ORGS = [
   { name: "Tulane University", logo: "/images/orgs/tulane.png", url: "https://tulane.edu" },
   { name: "McGill University", logo: "/images/orgs/mcgill.png", url: "https://mcgill.ca" },
   { name: "BNBU", logo: "/images/orgs/bnbu.png", url: "https://bnbu.edu.cn" },
-  { name: "SOLEIL Synchrotron", logo: "/images/orgs/soleil.png", url: "https://synchrotron-soleil.fr" },
+  { name: "SOLEIL Synchrotron", logo: "/images/orgs/soleil.png", url: "https://www.synchrotron-soleil.fr/en" },
   { name: "United Nations University", logo: "/images/orgs/unu.png", url: "https://unu.edu" },
   { name: "Chinese Academy of Social Sciences", logo: "/images/orgs/cass.png", url: "https://cssn.cn" },
   { name: "China Electronics Standardization Institute", logo: "/images/orgs/cesi.png", url: "https://csa-iot.org/member/china-electronics-standardization-institute/" },
