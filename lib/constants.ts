@@ -60,7 +60,7 @@ export const TRACKS = [
     icon: "globe",
     description: "Examining how agentic open-source foundations can function as global public infrastructure through value-driven projects and sustainable funding models.",
     color: "primary" as const,
-    keywords: ["Public AI Tokens", "AOSF", "Sustainable Models", "Open-Source Governance"] as const,
+    keywords: ["Public AI Tokens", "Public Goods", "Sustainable Models", "Open-Source Governance"] as const,
     highlight: false
   }
 ] as const;
@@ -90,7 +90,7 @@ export const WHY_NOW = {
     title: "The Core Insight: Who Does Infrastructure Serve?",
     lamp: "LAMP served humans — providing intuitive control and insight for managing complex digital environments.",
     claw: "Claw serves agents — providing infrastructure where AI agents can autonomously make decisions, collaborate on tasks, and execute work.",
-    governanceGap: "Just as the LAMP era had the Linux Foundation to coordinate open-source development, the Claw era needs AOSF (Agentic Open Source Foundation) — the Linux Foundation for the agentic stack."
+    governanceGap: "Just as the LAMP era had the Linux Foundation to coordinate open-source development, the Claw era needs neutral, community-driven foundations to coordinate the agentic stack."
   }
 } as const;
 
@@ -117,32 +117,6 @@ export const VALUE_PROPOSITION = [
     description: "We don't chase what's hot today. We frame enduring structural questions and use current evidence as illustrations."
   }
 ] as const;
-
-// AOSF Integration — Governance Framework for the Agentic Era
-export const AOSF_INFO = {
-  name: "Agentic Open Source Foundation",
-  tagline: "The Linux Foundation for the Agentic Stack",
-  description: "If LAMP made web applications possible, AOSF makes autonomous intelligence trustworthy. AOSF governs what LAMP never needed.",
-  url: "https://aosf.ai",
-  github: "https://github.com/aosf-org",
-  openTokenUrl: "https://open-token.org/",
-  governanceAreas: [
-    { title: "Intent (意图)", description: "Goal alignment — ensuring AI agents pursue objectives aligned with human values across multi-agent systems." },
-    { title: "Agents (代理)", description: "Trust protocols — authentication, capability certification, and identity verification for AI agents." },
-    { title: "Economic Coordination (经济协调)", description: "Incentive mechanisms — sustainable funding models and value distribution in agentic ecosystems." }
-  ],
-  strategicInitiatives: [
-    { id: "A", title: "Open Agent Identity", concept: "OAuth for Agents", objective: "Unified authentication ensuring secure mutual trust" },
-    { id: "B", title: "Open Spec Standard", concept: "HTML for Intent", objective: "Common intent description language for cross-platform understanding" },
-    { id: "C", title: "Orchestration Standard", concept: "Kubernetes for Agents", objective: "Intelligent agent routing and coordination" },
-    { id: "D", title: "Open Token", concept: "Public AI Compute", objective: "Fair distribution of AI computing power as public good" },
-    { id: "E", title: "Agent Marketplace", concept: "Capability Exchange", objective: "Trading capabilities, not just software" }
-  ],
-  openToken: {
-    description: "Open Token is NOT cryptocurrency — it is a metering and settlement mechanism for AI computing power, analogous to how kilowatt-hours measure electricity.",
-    goals: ["Accessibility", "Sustainability", "Growth"]
-  }
-} as const;
 
 export const REFERENCE_SITES = {
   mainSite: "https://visionforum.ai/",

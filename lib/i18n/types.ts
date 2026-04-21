@@ -88,18 +88,6 @@ export interface Translations {
     subtitle: string;
   };
 
-  // AOSF Section
-  aosfSection: {
-    title: string;
-    subtitle: string;
-    coreFunctionsTitle: string;
-    coreFunctions: string[];
-    keyStatsTitle: string;
-    keyStats: string[];
-    visitAosf: string;
-    viewLeaderboard: string;
-  };
-
   // Venue Section
   venue: {
     title: string;

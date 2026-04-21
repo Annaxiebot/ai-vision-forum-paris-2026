@@ -91,8 +91,6 @@ ai-vision-forum-paris-2026/
 
 ## Key References
 
-- **AOSF (Agentic Open Source Foundation):** [aosf-org.github.io](https://aosf-org.github.io)
-- **CELLO Leaderboard:** [aosf-org.github.io/cello](https://aosf-org.github.io/cello)
 - **Main AI Vision Forum:** [visionforum.ai](https://visionforum.ai/)
 - **GOSIM Paris 2026:** [paris2026.gosim.org](https://paris2026.gosim.org)
 

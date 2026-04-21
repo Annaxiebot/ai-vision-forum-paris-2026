@@ -11,8 +11,6 @@ Successfully reverted previous incorrect changes and updated the AI Vision Forum
 ## Source Documents
 
 - **Correct Planning Document:** `/Volumes/My Shared Files/vmshare/ai vision forum/AI_Vision_Forum_Paris_2026_PC_Planning_v3.pdf`
-- **AOSF Research:** https://github.com/aosf-org
-- **AOSF Website:** https://aosf-org.github.io
 
 ## Changes Made
 
@@ -60,7 +58,7 @@ All tracks revised to match v3 document:
 | A | AI & Education | Teaching for a Post-Code World | Specification, judgment, validation |
 | B | Human-AI Synergy | From Vibe Coding to the Dark Factory | L0-L5, Spec-driven, Cello |
 | C | Ethics & Governance | Two Levels: Human Ethics AND Agent Security | EU AI Act, OWASP Top 10, Cedar |
-| D | Digital Public Goods | When AI Trains on the Commons | OpenToken, sustainability, AOSF |
+| D | Digital Public Goods | When AI Trains on the Commons | OpenToken, sustainability |
 
 ### 4. Schedule Updates
 
@@ -75,44 +73,13 @@ Updated to v3 draft schedule with detailed session descriptions:
 - **17:15–17:45** — Closing Remarks
 - **18:00–20:30** — Working Dinner (themed tables)
 
-### 5. AOSF Integration (NEW)
-
-Added comprehensive AOSF section:
-
-#### AOSF Overview
-- **Full Name:** Agentic Open Source Foundation
-- **Tagline:** Neutral, transparent governance for AI-generated open source software
-- **Purpose:** First open source foundation purpose-built for AI-generated code
-
-#### Five Core Functions
-1. Vibe-Coded Project Repository (quality tiers)
-2. Rust Migration Initiative (C/C++ → Rust)
-3. Agentic-Native Operations (agent-assisted review)
-4. Ethical AI Development Standards
-5. CELLO Leaderboard (open-source LLM benchmark)
-
-#### Key Stats
-- **$47–93B** — Projected agentic AI market by 2030–2032
-- **45%** — AI-generated code with security vulnerabilities
-- **60,000+** — Projects with AGENTS.md
-- **1B+** — Lines of C/C++ to rewrite in memory-safe languages
-
-#### CELLO Project
-- **Full Name:** Code Evaluation LLM Leaderboard (Open)
-- **Description:** Rust rewrites of Redis, SQLite, Git, Nginx
-- **Methodology:** Shares DNA with StrongDM's approach
-- **Status:** Demo optional pending readiness (AIGC Spotlight)
-- **Links:** 
-  - Website: https://aosf-org.github.io/cello
-  - GitHub: https://github.com/aosf-org/cello
-
-### 6. Event Details Updated
+### 5. Event Details Updated
 
 - **Venue:** Vacielle Palace (or TBD) — updated from "Versailles Palace"
 - **Date Display:** Monday, May 4, 2026 — clarified day of week
 - **Scale:** 100–150 invited participants (using en dash)
 
-### 7. Personal Identifiers Removed
+### 6. Personal Identifiers Removed
 
 ✅ **Excluded as requested:**
 - Program committee names
@@ -124,9 +91,9 @@ Added comprehensive AOSF section:
 ## Files Modified
 
 ### Core Files
-- **lib/constants.ts** — Added v3 content structures (WHY_NOW, VALUE_PROPOSITION, AOSF_INFO, CELLO_PROJECT)
+- **lib/constants.ts** — Added v3 content structures (WHY_NOW, VALUE_PROPOSITION, CELLO_PROJECT)
 - **components/sections/AboutSection.tsx** — Added Guiding Question, Why Now, and Value Proposition sections
-- **app/page.tsx** — Integrated AOSF section, updated tracks and schedule rendering
+- **app/page.tsx** — Updated tracks and schedule rendering
 
 ### Build Status
 - ✅ TypeScript compilation successful
@@ -145,7 +112,7 @@ bed796e fix: Correct remaining Sunday→Monday reference in Notes section
 
 **Removed commits (using wrong document):**
 - `9df7c1e` Add website update summary documentation
-- `b6c8d7f` Update Paris 2026 website with program committee planning context and AOSF integration
+- `b6c8d7f` Update Paris 2026 website with program committee planning context
 
 ## Design Preservation
 
@@ -178,11 +145,9 @@ bed796e fix: Correct remaining Sunday→Monday reference in Notes section
 
 - [x] Reverted to correct git state
 - [x] Read correct v3 PDF document
-- [x] Researched AOSF at https://github.com/aosf-org
 - [x] Updated event context (guiding question, Why Now)
 - [x] Updated all four tracks with v3 content
 - [x] Updated schedule with v3 draft
-- [x] Integrated AOSF information
 - [x] Integrated CELLO project
 - [x] Removed personal identifiers
 - [x] Preserved existing design/styling

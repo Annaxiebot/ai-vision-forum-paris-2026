@@ -14,12 +14,6 @@ export default function AgenticSystemsTrack() {
       gradient="bg-gradient-to-br from-secondary/20 via-background to-accent/10"
       overview={t.trackVibeCoding.overview}
       keyTopics={t.trackVibeCoding.keyTopics}
-      resources={[
-        {
-          title: "The State of Agentic Development (Report)",
-          url: "https://github.com/aosf-org/aosf/blob/main/research/presentations/agentic-landscape-executive.pdf",
-        },
-      ]}
     >
       <div className="prose prose-invert max-w-none">
         <h2 className="text-2xl font-bold mb-4">{t.trackVibeCoding.spotlightTitle}</h2>

@@ -20,10 +20,6 @@ export default function PublicGoodTrack() {
           url: "https://open-token.org/",
         },
         {
-          title: "AOSF (Agentic Open Source Foundation)",
-          url: "https://aosf.ai/",
-        },
-        {
           title: "Digital Public Goods Alliance",
           url: "https://digitalpublicgoods.net/",
         },
