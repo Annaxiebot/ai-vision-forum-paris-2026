@@ -132,7 +132,7 @@ export const fr: Translations = {
 
   venue: {
     title: "Lieu",
-    venueDescription: "Un palais historique transformé en lieu de conférence moderne, alliant l'élégance parisienne à des installations de pointe.",
+    venueDescription: "Un lieu de rencontre intimiste en bord de Seine, au cœur historique de Paris.",
     colocatedDescription: "Co-organisé avec GOSIM Paris 2026, favorisant la pollinisation croisée entre les communautés de gouvernance et de vision IA.",
     accessDescription: "Facilement accessible depuis l'aéroport Paris Charles de Gaulle (CDG) et le centre de Paris par le métro.",
     viewOnMap: "Voir sur Google Maps →",

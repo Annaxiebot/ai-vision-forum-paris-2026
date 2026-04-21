@@ -132,7 +132,7 @@ export const cn: Translations = {
 
   venue: {
     title: "场地",
-    venueDescription: "一座历史宫殿改造成的现代会议场所，将巴黎的优雅与尖端设施完美融合。",
+    venueDescription: "位于巴黎历史中心塞纳河畔的私密聚会场所。",
     colocatedDescription: "与 GOSIM Paris 2026 联合举办，促进治理与 AI 愿景社区之间的交叉融合。",
     accessDescription: "从巴黎戴高乐机场（CDG）和巴黎市中心乘坐地铁即可便捷到达。",
     viewOnMap: "在 Google 地图上查看 →",

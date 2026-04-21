@@ -132,7 +132,7 @@ export const en: Translations = {
 
   venue: {
     title: "Venue",
-    venueDescription: "A historic palace transformed into a modern conference venue, combining Parisian elegance with cutting-edge facilities.",
+    venueDescription: "An intimate gathering place on the banks of the Seine in the historic heart of Paris.",
     colocatedDescription: "Co-located with GOSIM Paris 2026, enabling cross-pollination between governance and AI vision communities.",
     accessDescription: "Easily accessible from Paris Charles de Gaulle Airport (CDG) and central Paris via metro.",
     viewOnMap: "View on Google Maps →",

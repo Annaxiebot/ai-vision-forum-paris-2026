@@ -35,6 +35,11 @@ const PANELIST_ORGS = [
   { name: "Chinese Academy of Social Sciences", logo: "/images/orgs/cass.png", url: "https://cssn.cn" },
   { name: "China Electronics Standardization Institute", logo: "/images/orgs/cesi.png", url: "https://csa-iot.org/member/china-electronics-standardization-institute/" },
   { name: "Egen AI", logo: "/images/orgs/egen.png", url: "https://egen.ai" },
+  { name: "Advanced AI Society", logo: "/images/orgs/advanced-ai-society.png", url: "https://advancedaisociety.org" },
+  { name: "Alma AI", logo: "/images/orgs/alma-ai.png", url: "https://centri.unibo.it/alma-ai" },
+  { name: "University of Bologna", logo: "/images/orgs/university-of-bologna.png", url: "https://www.unibo.it/en" },
+  { name: "Voice Interoperability", logo: "/images/orgs/voice-interoperability.svg", url: "https://voiceinteroperability.ai" },
+  { name: "Institute for Technoscience and Society", logo: "/images/orgs/technoscience-society.png", url: "https://www.yorku.ca/research/its/" },
 ];
 
 const TRACK_ICON_KEYS = ["laptop", "graduation-cap", "scale", "globe"];
@@ -180,7 +185,9 @@ export default function Home() {
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="mb-2 text-2xl font-semibold">{EVENT_CONFIG.location.venue}</h3>
+                  {EVENT_CONFIG.location.venue && (
+                    <h3 className="mb-2 text-2xl font-semibold">{EVENT_CONFIG.location.venue}</h3>
+                  )}
                   <p className="text-lg text-muted-foreground">
                     {EVENT_CONFIG.location.city}, {EVENT_CONFIG.location.country}
                   </p>
