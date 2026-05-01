@@ -32,15 +32,51 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavClick = (href: string) => {
+  // When a page loads with a hash (e.g. arriving at /#tracks from another page),
+  // scroll to that section once the DOM is rendered. The browser's native
+  // hash-scroll runs before React hydration, so the target element doesn't
+  // exist yet — we poll briefly until it does, then scroll instantly.
+  // We temporarily override the global `scroll-behavior: smooth` so the
+  // initial position-on-arrival is immediate (smooth scrolling deep into the
+  // page from the top is disorienting and unreliable across browsers).
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const hash = window.location.hash;
+    if (!hash || hash === "#") return;
+
+    let attempts = 0;
+    const maxAttempts = 30;
+    const poll = () => {
+      const el = document.querySelector(hash);
+      if (el) {
+        const html = document.documentElement;
+        const prev = html.style.scrollBehavior;
+        html.style.scrollBehavior = "auto";
+        const top = el.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo(0, top);
+        html.style.scrollBehavior = prev;
+        return;
+      }
+      if (++attempts < maxAttempts) {
+        setTimeout(poll, 50);
+      }
+    };
+    poll();
+  }, []);
+
+  const handleNavClick = (href: string): boolean => {
     setIsMobileMenuOpen(false);
 
     if (href.startsWith("/#")) {
       const element = document.querySelector(href.substring(1));
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
+        return true;
       }
+      window.location.href = href;
+      return true;
     }
+    return false;
   };
 
   return (
@@ -80,8 +116,9 @@ export function Header() {
                   href={item.href}
                   onClick={(e) => {
                     if (item.href.startsWith("/#")) {
-                      e.preventDefault();
-                      handleNavClick(item.href);
+                      if (handleNavClick(item.href)) {
+                        e.preventDefault();
+                      }
                     }
                   }}
                   className={`text-sm font-medium transition-colors hover:text-primary ${
@@ -139,8 +176,9 @@ export function Header() {
                     href={item.href}
                     onClick={(e) => {
                       if (item.href.startsWith("/#")) {
-                        e.preventDefault();
-                        handleNavClick(item.href);
+                        if (handleNavClick(item.href)) {
+                          e.preventDefault();
+                        }
                       } else {
                         setIsMobileMenuOpen(false);
                       }
