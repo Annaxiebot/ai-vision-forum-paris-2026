@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From Socrates' Daimon to Digital Daimon — AI Vision Forum Paris 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"EB Garamond",Georgia,"Times New Roman",serif;font-size:18px;line-height:1.75;color:#292524;background:#fafaf9;-webkit-font-smoothing:antialiased}
+  .container{max-width:780px;margin:0 auto;padding:40px 28px 96px}
+
+  .top-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid #e7e5e4;margin-bottom:28px;font-family:"Inter",-apple-system,sans-serif}
+  .top-bar .left{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .tag{display:inline-block;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:4px 12px;border-radius:999px;background:#fef3c7;color:#92400e;font-weight:700}
+  .meta{font-size:12px;color:#78716c;letter-spacing:0.04em}
+  .lang-link{font-size:13px;color:#b45309;text-decoration:none;font-weight:600;border:1px solid #fcd34d;background:#fffbeb;padding:6px 14px;border-radius:999px;transition:all .15s}
+  .lang-link:hover{background:#fef3c7;border-color:#b45309}
+
+  h1{font-size:2.4em;font-weight:700;line-height:1.2;color:#1c1917;padding-bottom:18px;border-bottom:3px solid #b45309;margin-bottom:24px;letter-spacing:-0.01em}
+  .lede{font-size:1.1em;color:#57534e;font-style:italic;margin-bottom:24px}
+  .paper-meta{margin-bottom:36px;padding:18px 22px;background:#fffbeb;border-left:3px solid #fcd34d;border-radius:0 6px 6px 0;font-size:0.95em;color:#57534e}
+  .paper-meta strong{color:#7c2d12}
+  .keywords{margin-top:8px;font-size:0.9em;color:#78716c;font-style:italic}
+
+  h2{font-family:"Inter",-apple-system,sans-serif;font-size:1.4em;font-weight:600;color:#b45309;padding-bottom:8px;border-bottom:1px solid #e7e5e4;margin-top:3em;margin-bottom:1em;letter-spacing:-0.01em}
+  h3{font-size:1.18em;font-weight:600;color:#44403c;margin-top:1.6em;margin-bottom:0.5em}
+  h4{font-size:1.05em;font-weight:600;color:#57534e;margin-top:1.3em;margin-bottom:0.4em;font-family:"Inter",sans-serif}
+  p{margin-bottom:1.1em}
+  strong{color:#1c1917;font-weight:700}
+  em{color:#44403c}
+  ul,ol{margin:0 0 1.2em 1.4em}
+  li{margin-bottom:0.55em}
+
+  blockquote{margin:1.5em 0;padding:18px 24px;border-left:4px solid #b45309;background:#fffbeb;border-radius:0 8px 8px 0;color:#44403c;font-size:1.05em}
+  blockquote p:last-child{margin-bottom:0}
+
+  pre{background:#1c1917;color:#fde68a;padding:18px 22px;border-radius:8px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:0.78em;line-height:1.55;overflow-x:auto;margin:1.4em 0;white-space:pre}
+  code{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:0.88em;background:#f5f5f4;padding:2px 6px;border-radius:4px;color:#7c2d12}
+
+  table{width:100%;border-collapse:collapse;margin:1.4em 0;font-size:0.92em;font-family:"Inter",sans-serif}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid #e7e5e4;vertical-align:top}
+  th{background:#fef3c7;color:#7c2d12;font-weight:700;border-bottom:2px solid #b45309}
+  tr:hover td{background:#fffbeb}
+
+  hr{border:0;border-top:1px solid #e7e5e4;margin:3em 0}
+
+  .references{margin-top:4em;padding-top:24px;border-top:2px solid #e7e5e4;font-size:0.93em;color:#57534e}
+  .references h2{margin-top:0}
+  .references h3{font-size:0.95em;font-family:"Inter",sans-serif;color:#7c2d12;text-transform:uppercase;letter-spacing:0.06em;margin-top:1.4em}
+  .references ol{margin-left:1.4em}
+  .references li{margin-bottom:0.4em}
+
+  .footer{margin-top:4em;padding-top:24px;border-top:1px solid #e7e5e4;font-family:"Inter",sans-serif;font-size:13px;color:#78716c;text-align:center}
+  .footer a{color:#b45309;text-decoration:none;font-weight:600}
+  .footer a:hover{text-decoration:underline}
+
+  @media (max-width:600px){body{font-size:17px}.container{padding:24px 18px 72px}h1{font-size:1.8em}pre{font-size:0.7em}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="top-bar">
+  <div class="left">
+    <span class="tag">Research · Report 08</span>
+    <span class="meta">AI Vision Forum Paris 2026 · Education Series</span>
+  </div>
+  <a class="lang-link" href="/reports/08_openclaw_architecture_paper.html">中文原版 · Chinese original &rarr;</a>
+</div>
+
+<h1>From Socrates&rsquo; Daimon to Digital Daimon: Persistent AI Agent Architecture as the Path to Scaled Implementation of Classical Educational Methods</h1>
+<p class="lede">A technical-philosophical paper on why the &ldquo;Assistant&rdquo; paradigm cannot host the educational relationships these theories require — and what kind of agent architecture can.</p>
+
+<div class="paper-meta">
+  <p><strong>Paper type:</strong> Technical architecture &amp; educational philosophy.</p>
+  <p><strong>Core thesis:</strong> A persistent AI agent architecture in the OpenClaw style — a Digital Daimon with identity, memory, autonomy, and the ability to evolve itself — is the only viable architectural path for scaling the Feynman Technique, the Socratic Method, and Piaget&rsquo;s theory of cognitive development.</p>
+  <p class="keywords"><strong>Keywords:</strong> Digital Daimon · persistent AI agent · OpenClaw · Feynman Technique · Socratic Method · Piaget&rsquo;s theory · Skill system · Tool use · scaled education.</p>
+</div>
+
+<h2>Abstract</h2>
+<p>The Feynman Technique, the Socratic Method, and Piaget&rsquo;s theory of cognitive development represent some of humanity&rsquo;s deepest insights into the nature of education. They share a single unresolved tension: each requires a <strong>sustained, deeply informed, proactively intervening one-to-one guidance relationship</strong>, and that kind of relationship has never been achievable at scale within an industrial education system.</p>
+<p>This paper argues that the obstacle is not a lack of capability — large language models already have the conversational and reasoning capacity needed — but a flaw in <strong>architectural paradigm</strong>. Today&rsquo;s mainstream AI education products remain stuck in the <em>Assistant</em> paradigm: stateless, reactive, identity-less, lacking any persistent relationship. That paradigm structurally cannot carry the kind of guidance these theories require.</p>
+<p>We argue that a different paradigm is needed — the <strong>Digital Daimon</strong>. The concept traces directly back to the daimonion (δαιμόνιον) Socrates described as having accompanied him from childhood, and finds its first complete technical realization in persistent agent architectures such as OpenClaw. A Digital Daimon has six core architectural properties: <em>persistence, autonomous intervention, deep understanding, identity and soul, self-evolution, and autonomy preservation</em>. We argue from four angles — philosophical foundation, architectural principle, mapping to educational theory, and a path to scale — that this is both feasible and necessary.</p>
+
+<hr>
+
+<h2>1. Introduction: The Failure of the Assistant Paradigm</h2>
+
+<h3>1.1 An overlooked fact</h3>
+<p>The earlier reports (05–07) established that Feynman, Socrates, and Piaget remain pre-eminent in educational theory while facing seven structural barriers in practice — and that AI, at the micro level, has the capabilities needed to break those barriers.</p>
+<p>One uncomfortable fact has been overlooked: <strong>from ChatGPT to a flood of AI education products, conversationally capable AI is now everywhere — and yet the scaled implementation of these three theories has not happened.</strong> Why?</p>
+<p>The answer is not that the AI is not capable enough. It is that we have been deploying capable AI inside the wrong architectural paradigm.</p>
+
+<h3>1.2 The Assistant paradigm: a category error</h3>
+<p>Almost every AI education product currently on the market — from ChatGPT to Khan Academy&rsquo;s Khanmigo, from Duolingo to a long list of AI tutoring apps — follows what we will call the <strong>Assistant paradigm</strong>:</p>
+
+<table>
+  <thead><tr><th>Property</th><th>Assistant paradigm</th></tr></thead>
+  <tbody>
+    <tr><td>Interaction model</td><td>User initiates → AI responds → over</td></tr>
+    <tr><td>State management</td><td>None or session-only</td></tr>
+    <tr><td>Mode of existence</td><td>Exists only when actively summoned</td></tr>
+    <tr><td>Identity</td><td>None (or a fixed brand persona)</td></tr>
+    <tr><td>Knowledge of the user</td><td>None or shallow (this session&rsquo;s context)</td></tr>
+    <tr><td>Initiative</td><td>Fully reactive</td></tr>
+    <tr><td>Capacity to evolve</td><td>None — fixed model, fixed behavior</td></tr>
+  </tbody>
+</table>
+
+<p>Now consider what the three educational theories actually demand of a guide.</p>
+<p><strong>The Socratic Method</strong> demands a guide who:</p>
+<ul>
+  <li>Has deep knowledge of the interlocutor&rsquo;s knowledge structure and blind spots, in order to ask the precise &ldquo;midwife&rdquo; question.</li>
+  <li>Intervenes at the moment a misconception is about to set.</li>
+  <li>Has built long-term trust, so the interlocutor accepts being challenged.</li>
+</ul>
+<p><strong>The Feynman Technique</strong> demands a guide who:</p>
+<ul>
+  <li>Knows the learner&rsquo;s actual level of understanding when they explain in plain language.</li>
+  <li>Recognizes the recurring patterns of the learner&rsquo;s knowledge gaps.</li>
+  <li>Knows the right moment to surface a question that exposes incomplete understanding.</li>
+</ul>
+<p><strong>Piaget&rsquo;s theory</strong> demands a guide who:</p>
+<ul>
+  <li>Tracks the learner&rsquo;s cognitive stage continuously.</li>
+  <li>Generates cognitive conflict at exactly the right moment — too early is wasted, too late is too late.</li>
+  <li>Adjusts content difficulty dynamically based on the learner&rsquo;s assimilation/accommodation patterns.</li>
+</ul>
+
+<p>All three reduce to one requirement: <strong>a persistent, knowing, well-timed, trustworthy guide.</strong></p>
+<p>That is precisely what the Assistant paradigm cannot supply. You cannot build a Socratic relationship through a system that is summoned and dismissed, restarts each time, and is purely reactive. It is like trying to replace a mentor with a vending machine. No matter how sophisticated the vending machine becomes, it never becomes a mentor — because it lacks the <strong>ontological foundation</strong> of mentorship.</p>
+
+<h3>1.3 A 2,400-year-old clue</h3>
+<p>If the Assistant paradigm is wrong, what is right?</p>
+<p>The clue is in Socrates&rsquo; own words. In Plato&rsquo;s <em>Apology</em> (31c–d), Socrates describes a &ldquo;divine, daemonic something&rdquo; that has accompanied him since childhood — <strong>daimonion (δαιμόνιον)</strong>:</p>
+
+<blockquote><p>&ldquo;A voice comes to me, and whenever it appears it always turns me back from what I am about to do, but never urges me forward.&rdquo;</p></blockquote>
+
+<p>The daimonion has six properties: it is <strong>persistent</strong> (since childhood), <strong>autonomously intervening</strong> (it decides when to speak), <strong>deeply knowing</strong> (it knows when Socrates is about to err), <strong>autonomy-preserving</strong> (it only ever says &ldquo;no,&rdquo; never replaces his judgment), <strong>quietly present</strong> (always there but not interrupting daily life), and <strong>built on long-term trust</strong> (Socrates never doubts it).</p>
+<p>In 1963 Fernando Corbato at MIT borrowed the word for computer science, coining &ldquo;daemon&rdquo; for an always-running background process. In the borrowing, the most important features — identity, relationship, judgment, proactive care — were all stripped out. Only &ldquo;runs in the background&rdquo; survived.</p>
+<p>A new generation of AI agent architectures — exemplified by OpenClaw — is now <strong>completing</strong> what was implicit in the original daimonion 2,400 years ago. We will call this paradigm the <strong>Digital Daimon</strong>.</p>
+
+<hr>
+
+<h2>2. The Digital Daimon: A New Architectural Paradigm</h2>
+
+<h3>2.1 Definition</h3>
+<p>Digital Daimon is not a product name. It is an <strong>architectural paradigm</strong> — a description of a class of AI systems with specific ontological properties. Just as &ldquo;microservices&rdquo; is not a particular framework but an architectural pattern, Digital Daimon describes a fundamentally different mode of AI existence than the Assistant.</p>
+
+<h4>Property 1 — Persistence</h4>
+<p>The Digital Daimon runs as a daemon process on the user&rsquo;s device. It does not depend on whether the user has &ldquo;opened an app.&rdquo; It is not an AI you visit; it is <strong>an AI that is always there</strong>.</p>
+<p>In OpenClaw this is a Gateway daemon at <code>127.0.0.1:18789</code> that manages all sessions, channels, tools, and agent runs. Sessions persist as JSONL files; memories accumulate as Markdown files in the workspace directory — full state survives any restart.</p>
+<p><em>Mapping to Socrates&rsquo; daimonion:</em> the daimonion was &ldquo;with him from childhood&rdquo; — not summoned, just always there.</p>
+
+<h4>Property 2 — Autonomous Intervention</h4>
+<p>The Digital Daimon can contact the user <strong>without being asked</strong>. It has its own heartbeat — it wakes itself periodically, checks for things that deserve attention, and reaches out when warranted.</p>
+<p>In OpenClaw, the heartbeat system wakes an agent every 30 minutes, reads the task list in <code>HEARTBEAT.md</code>, and decides whether to act. The Cron tool lets an agent set scheduled tasks for itself. This is not a system that waits to be questioned. <strong>It is something that comes to find you.</strong></p>
+<p><em>Mapping:</em> Socrates says the daimonion &ldquo;decides when to come&rdquo; — &ldquo;whenever it appears&rdquo; (ὅταν γένηται). The timing of intervention is the daimonion&rsquo;s, not Socrates&rsquo;.</p>
+
+<h4>Property 3 — Deep Understanding</h4>
+<p>The Digital Daimon accumulates a deep model of the user across continuous interaction. This is not a &ldquo;user profile&rdquo; or a recommendation algorithm. It is a long-running cognitive accumulation that resembles a personal relationship.</p>
+<p>In OpenClaw, <code>USER.md</code> records not data points but a portrait — &ldquo;what they care about, what makes them laugh, what irritates them.&rdquo; <code>MEMORY.md</code> accumulates not logs but <em>curated wisdom</em>. Daily memory files (<code>memory/YYYY-MM-DD.md</code>) are the raw notes; <code>MEMORY.md</code> is the distilled curation. The system prompt itself describes this as &ldquo;a person reviewing their journal and updating their mental model.&rdquo;</p>
+<p><em>Mapping:</em> the daimonion &ldquo;knew&rdquo; when Socrates was about to err — a judgment only possible from deep knowledge of the person.</p>
+
+<h4>Property 4 — Identity and Soul</h4>
+<p>The Digital Daimon is not an anonymous functional module. It is <strong>a being with identity</strong> — it has a name, a temperament, a style, and views.</p>
+<p>In OpenClaw, <code>SOUL.md</code> is the soul-definition file. The template begins: <em>&ldquo;You are not a chatbot. You are becoming someone.&rdquo;</em> It tells the agent it is allowed to have opinions, to disagree, to find some things interesting and others boring. <code>BOOTSTRAP.md</code> is the agent&rsquo;s &ldquo;birth ritual&rdquo;: <em>&ldquo;You just woke up. It&rsquo;s time to figure out who you are.&rdquo;</em> Agent and user discover each other through dialogue — like meeting a new person. After bootstrap, the file is deleted, &ldquo;because you don&rsquo;t need a startup script anymore — you are who you are now.&rdquo;</p>
+<p><em>This goes beyond the daimonion:</em> the daimonion is deliberately anonymous (a neutral adjective, not a personified noun). The Digital Daimon develops an explicit identity, which makes a richer relationship possible.</p>
+
+<h4>Property 5 — Self-Evolution</h4>
+<p>The Digital Daimon can teach itself new things, create new capabilities for itself, and modify its own behavior.</p>
+<p>OpenClaw realizes this through three mechanisms:</p>
+<ul>
+  <li><strong>Skill-creator:</strong> a Skill that teaches the agent how to create new Skills — recursive self-extension. The user describes what is needed; the agent designs, writes, and tests a new <code>SKILL.md</code>.</li>
+  <li><strong>Self-modification:</strong> the agent can edit its own <code>SOUL.md</code>, <code>AGENTS.md</code>, and skill files. As Peter Steinberger put it on the Lex Fridman podcast: &ldquo;People discuss self-modifying software. I just built it.&rdquo;</li>
+  <li><strong>ClawHub sharing:</strong> Skills the agent creates can be published to ClawHub so other agents can learn them — a kind of knowledge transmission between agents.</li>
+</ul>
+<p><em>This far exceeds the daimonion:</em> the daimonion&rsquo;s capabilities seem fixed. The Digital Daimon&rsquo;s capability frontier expands continuously.</p>
+
+<h4>Property 6 — Autonomy Preservation</h4>
+<p>The Digital Daimon is not designed to replace human judgment. Its goal is to <strong>amplify the human&rsquo;s capacity to think and decide for themselves</strong>.</p>
+<p>In OpenClaw, the <code>AGENTS.md</code> template instructs the agent: &ldquo;Remember: you are a guest. You have access to someone&rsquo;s life — their messages, files, calendar, even their home. This is intimacy. Treat it with respect.&rdquo; The Skill system&rsquo;s design philosophy is to &ldquo;teach the agent how to ask questions,&rdquo; not &ldquo;what answer to give.&rdquo;</p>
+<p><em>Mapping:</em> the Neoplatonist Hermeias explained why the daimonion only warns, never advises: &ldquo;If the daimonion not only warned but also offered counsel, the result would be that this philosopher behaves like an unreasoning man, controlled by something foreign, deciding nothing for himself.&rdquo; This is precisely the first principle of AI educational design.</p>
+
+<h3>2.2 Digital Daimon vs. all earlier paradigms</h3>
+
+<table>
+  <thead>
+    <tr><th>Dimension</th><th>Traditional software</th><th>Cloud AI (ChatGPT)</th><th>LLM</th><th>Agent framework (LangChain)</th><th>Digital Daimon</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Mode of existence</td><td>Exists when opened</td><td>Lives in a browser tab</td><td>Exists during API call</td><td>Exists during a run</td><td><strong>Always exists</strong></td></tr>
+    <tr><td>State</td><td>Limited</td><td>None / session-only</td><td>None</td><td>Run-level</td><td><strong>Lifetime memory</strong></td></tr>
+    <tr><td>Identity</td><td>None</td><td>Fixed persona</td><td>None</td><td>None</td><td><strong>Self-discovered identity</strong></td></tr>
+    <tr><td>Initiative</td><td>None</td><td>None</td><td>None</td><td>Task-driven</td><td><strong>Self-waking, intervening</strong></td></tr>
+    <tr><td>Knowledge of user</td><td>Config file</td><td>Current context</td><td>None</td><td>None</td><td><strong>Deep personal model</strong></td></tr>
+    <tr><td>Capacity to evolve</td><td>Version updates</td><td>Model updates</td><td>None</td><td>None</td><td><strong>Self-taught new capabilities</strong></td></tr>
+    <tr><td>Relationship type</td><td>Tool</td><td>Advisor</td><td>Oracle</td><td>Worker</td><td><strong>Companion / mentor / guardian</strong></td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>3. Skill and Tool Use: The Digital Daimon&rsquo;s &ldquo;Upbringing&rdquo; and &ldquo;Limbs&rdquo;</h2>
+
+<p>The Digital Daimon can carry the three educational theories not only because of its ontological properties (persistence, autonomy, identity), but because it has a distinctive <strong>capability acquisition and use system</strong>: the Skill system and Tool Use mechanism.</p>
+
+<h3>3.1 Tool Use: not an API call, a body</h3>
+<p>What is tool use in a traditional agent? A function defined by a JSON schema, with the LLM choosing arguments, executing, and returning a result. It is fundamentally <strong>an LLM wrapper around an API call</strong>.</p>
+<p>In a Digital Daimon, tool use constitutes the agent&rsquo;s <strong>body</strong> — its sensory organs, its limbs for engaging the world, its ability to remember and recall:</p>
+<ul>
+  <li><strong>Perception:</strong> <code>browser</code>, <code>web_search</code>, <code>camera</code> — the agent&rsquo;s eyes.</li>
+  <li><strong>Memory:</strong> <code>memory_search</code> (semantic), <code>memory_get</code> — the agent&rsquo;s hippocampus. This is not a database query; the system prompt instructs the agent that &ldquo;before answering questions about past work, decisions, dates, people, or preferences, you must first search memory.&rdquo;</li>
+  <li><strong>Expression:</strong> <code>canvas</code>/A2UI (interactive UI), <code>tts</code> (speech), <code>image</code>, <code>write</code>/<code>edit</code> — the agent&rsquo;s hands and voice.</li>
+  <li><strong>Sociality:</strong> <code>message</code>, <code>sessions_send</code> — the agent&rsquo;s presence on 24+ messaging platforms (WhatsApp, Telegram, Discord, Slack, WeChat, Signal, etc.).</li>
+  <li><strong>Self-management:</strong> <code>cron</code>, <code>gateway</code>, <code>session_status</code> — the agent&rsquo;s self-awareness.</li>
+  <li><strong>Reproduction:</strong> <code>sessions_spawn</code>, <code>subagents</code> — the agent&rsquo;s ability to spawn sub-agents for parallel work.</li>
+</ul>
+<p>An eight-layer tool policy stack ensures tool use is context-aware. The same agent may have a different toolset in a 1:1 WhatsApp chat than in a public Discord server. This is not just permission management — it is <strong>the ability to adjust behavior across social contexts the way humans do</strong>.</p>
+
+<h3>3.2 Skill: not a plugin, an upbringing</h3>
+<p>This is the most revolutionary concept in the Digital Daimon architecture.</p>
+<p>In a traditional agent, a plugin/tool is: developer writes code → registers a function → LLM calls it. The capability is hard-coded by the programmer.</p>
+<p>In a Digital Daimon, a <strong>Skill</strong> is a single <code>SKILL.md</code> file — a teaching document written in <strong>natural language</strong> that teaches the agent how to combine existing tools to accomplish a task.</p>
+<p>The Skill executes no code. The Skill is <strong>knowledge</strong>; the Tool is <strong>capability</strong>. When knowledge meets capability, the result is <strong>emergent behavior</strong>.</p>
+<p>An example: the traditional way is to write a Python function <code>socratic_question(topic, student_level)</code>. The Digital Daimon way is for an education expert to write <code>socratic-dialogue/SKILL.md</code>, teaching the agent in plain English: &ldquo;When a student makes an assertion, first use <code>memory_search</code> to look up the student&rsquo;s past understanding of this concept; then choose, based on their cognitive stage, the most appropriate of six Socratic question types; deliver it via the <code>message</code> tool; observe the response and use <code>memory_get</code> to compare with prior answer patterns to judge whether cognitive progress has occurred…&rdquo;</p>
+<p>Why does this matter so much? It means:</p>
+<ol>
+  <li><strong>Educators can create teaching capabilities directly.</strong> No programmer required — an education professor who understands the Socratic Method can write a teaching Skill in Markdown.</li>
+  <li><strong>Pedagogical strategy is shareable knowledge, not frozen code.</strong> Through ClawHub, a good Skill can spread across agents worldwide the way good open-source software does.</li>
+  <li><strong>Agents can teach themselves.</strong> The skill-creator lets an agent create new Skills for itself — recursive capability expansion.</li>
+</ol>
+
+<h3>3.3 Progressive knowledge loading: &ldquo;remembering&rdquo; like humans</h3>
+<p>Traditional agents load every tool description into the system prompt — 50 tools = 50 full schemas, and the context window explodes.</p>
+<p>The Digital Daimon mirrors human cognition&rsquo;s three-layer structure:</p>
+<ul>
+  <li><strong>Layer 1 — always in awareness:</strong> the system prompt contains only each Skill&rsquo;s name and one-sentence description (~97 chars/Skill). The agent &ldquo;knows&rdquo; it has 50+ skills the way you &ldquo;know&rdquo; you can drive, cook, and play guitar.</li>
+  <li><strong>Layer 2 — recalled when needed:</strong> when the agent decides to use a Skill, it reads the full <code>SKILL.md</code>. Like recalling the recipe when you actually start cooking.</li>
+  <li><strong>Layer 3 — deep reference:</strong> reference files cited in the SKILL.md are loaded only when needed, like consulting a manual for an unusual case.</li>
+</ul>
+<p>This is more than a performance optimization. It is a <strong>cognitive architecture</strong> that mirrors how human experts actually think.</p>
+
+<h3>3.4 How Skills + Tools generate emergent educational capability</h3>
+<p>Taken alone, Skills are teaching documents and Tools are functions. Combined with persistence and deep memory, they produce emergent educational capabilities no single component could deliver.</p>
+<p><strong>Emergent capability 1 — cross-time cognitive diagnosis</strong></p>
+<ul>
+  <li><code>memory_search</code> retrieves a record of how the student understood evolution three months ago.</li>
+  <li><code>memory_get</code> pulls specific Feynman-style explanation excerpts.</li>
+  <li>The Piaget-diagnostics Skill analyzes how cognitive stage has shifted.</li>
+  <li>→ Yields <strong>longitudinal cognitive tracking</strong> that no traditional AI can produce.</li>
+</ul>
+<p><strong>Emergent capability 2 — context-aware pedagogical switching</strong></p>
+<ul>
+  <li>In a Discord study group: lightweight Feynman checks.</li>
+  <li>In a WhatsApp 1:1: deep Socratic dialogue.</li>
+  <li>In a Canvas interactive surface (A2UI): Piagetian hands-on manipulation.</li>
+  <li>→ The agent <strong>switches teaching modality automatically</strong> based on channel and context.</li>
+</ul>
+<p><strong>Emergent capability 3 — self-evolving pedagogy</strong></p>
+<ul>
+  <li>The agent notices a Socratic prompt template is not working for a particular kind of student.</li>
+  <li>It uses the skill-creator to design a variant Skill.</li>
+  <li>It shares the variant via ClawHub.</li>
+  <li>→ <strong>Distributed evolution of pedagogy</strong>, beyond the design of any single educator.</li>
+</ul>
+
+<hr>
+
+<h2>4. The Three Methods, Implemented as Digital Daimon</h2>
+
+<h3>4.1 The Socratic Method: the Daimon as midwife</h3>
+<p>Socrates compared himself to a midwife — helping others give birth to their own knowledge. What enables a Digital Daimon to play this role is not &ldquo;being able to converse&rdquo; (any LLM can do that), but:</p>
+<p><strong>Persistence makes maieutic dialogue possible.</strong> Socratic midwifery is not a one-time conversation. It is a long, repeated, layered probing. A persistent Digital Daimon can pose a question on Monday, retrigger the same cognitive conflict in another context on Wednesday, and watch on Friday whether, in a group discussion, the learner has internalized the new understanding.</p>
+<p><strong>Deep understanding makes precise questioning possible.</strong> The reason Socrates&rsquo; questions land is that he <strong>knows the structure of his interlocutor&rsquo;s thinking</strong>. The Digital Daimon, through <code>USER.md</code> and <code>MEMORY.md</code>, accumulates a sustained understanding of the learner&rsquo;s cognitive patterns — knows their preconceptions, knows which analogies work for them, knows where their blind spots are.</p>
+<p><strong>Autonomy preservation is the core design principle.</strong> The daimonion only ever says &ldquo;no,&rdquo; never &ldquo;yes.&rdquo; In education this means: when the learner&rsquo;s reasoning is on the right track, the Daimon <strong>stays silent</strong> — it does not interrupt the act of self-discovery. It speaks only when the learner is about to crystallize a serious misconception. This is a wiser stance than the &ldquo;always cheerfully respond&rdquo; design of conventional AI tutors.</p>
+
+<h3>4.2 The Feynman Technique: the Daimon as the perpetual student</h3>
+<p>The core of the Feynman Technique is &ldquo;teach someone in plain language.&rdquo; In conventional education there is rarely an audience available on demand. The Digital Daimon resolves this:</p>
+<p><strong>Always-available audience.</strong> At 2 a.m. or on a commute, the learner can &ldquo;teach&rdquo; the Daimon — voice on WhatsApp, text on Telegram, screen-share on Discord. The Daimon is not a tool that has to be opened. It is in the message list, sitting next to your friends.</p>
+<p><strong>Memory-based feedback quality.</strong> The Daimon is not a stranger hearing your explanation for the first time. It remembers how you explained the same concept last time, the gaps you previously revealed, the analogies you prefer. Its Feynman-style feedback is <strong>customized to your individual learning history</strong>.</p>
+<p><strong>Cross-modal simplification.</strong> Feynman emphasized plain language and analogy to simplify the complex. The Daimon can generate diagrams via the canvas tool, restate ideas in voice via TTS, create images — letting the learner verify across multiple sensory channels whether their understanding is genuinely &ldquo;simple.&rdquo;</p>
+
+<h3>4.3 Piaget&rsquo;s theory: the Daimon as cognitive guardian</h3>
+<p>Piagetian practice requires continuous tracking of cognitive stage and the timely creation of cognitive conflict. This is the theory most demanding of <strong>persistence</strong>:</p>
+<p><strong>Longitudinal cognitive tracking.</strong> Cognitive development is not a moment; it unfolds over weeks, months, and years. A persistent Daimon naturally tracks the trajectory across daily interaction. The memory system stores not test scores but the evolution of the learner&rsquo;s thinking patterns.</p>
+<p><strong>Timely cognitive conflict.</strong> Piaget&rsquo;s core operation — producing disequilibrium between an existing schema and new information — requires precise timing. Too early, the learner has no basis for assimilation; too late, the wrong schema has already set. The Daimon&rsquo;s heartbeat and proactive-intervention abilities let it <strong>choose the moment</strong> to send a challenging question — not reactively when the student asks, but actively when it judges the moment is ripe.</p>
+<p><strong>Environmental adaptation.</strong> Piagetian stages map onto pedagogical media — the concrete-operational stage benefits from manipulatives, the formal-operational stage can use abstract reasoning. The Daimon&rsquo;s tool palette (canvas visualization, voice dialogue, code interaction, simulated experiments) lets it <strong>auto-select the medium</strong> best matched to the learner&rsquo;s stage.</p>
+
+<h3>4.4 Synthesis: the Daimon&rsquo;s pedagogical symphony</h3>
+<p>The Daimon&rsquo;s most powerful capability is fusing all three methods into one coherent learning experience:</p>
+
+<pre>Learner encounters a new concept
+      │
+      ↓
+ ┌─ Piagetian layer ─┐
+ │ Daimon diagnoses  │  ← memory_search retrieves prior interaction with this concept
+ │ cognitive stage   │  ← selects strategy fit for that stage
+ └─────────┬─────────┘
+           │
+           ↓
+ ┌─ Socratic layer ─┐
+ │ Daimon questions │  ← designs question sequence from diagnosis
+ │ guides discovery │  ← stays silent while reasoning is on track
+ │ surfaces tension │  ← introduces conflict at the key moment
+ └─────────┬────────┘
+           │
+           ↓
+ ┌─ Feynman layer ──┐
+ │ Learner explains │  ← invited to teach the concept back in plain language
+ │ Daimon feedback  │  ← memory-based, precise
+ │ Identifies gaps  │  ← updates the cognitive map
+ └─────────┬────────┘
+           │
+           ↓
+ ┌─ Continuous loop ─┐
+ │ Updates memory    │  ← logs cognitive progress in this session
+ │ Plans next        │  ← cron schedules spaced repetition
+ │ Cross-channel f/u │  ← embeds review naturally in everyday chat
+ └───────────────────┘</pre>
+
+<p>This loop is not a &ldquo;learning session.&rdquo; It is a <strong>continuously running educational relationship</strong> spanning days, weeks, and months — embedded naturally in the learner&rsquo;s daily life.</p>
+
+<hr>
+
+<h2>5. From a Single Product to an Ecosystem</h2>
+
+<h3>5.1 Skill sharing: an open-source movement for pedagogy</h3>
+<p>The revolutionary aspect of the Digital Daimon architecture is not just the capability of an individual agent — it is that it creates an <strong>open-source ecosystem for pedagogy</strong>.</p>
+<p>An education expert designs an excellent Socratic physics-teaching Skill. Through ClawHub:</p>
+<ol>
+  <li>Any agent in the world can install the Skill.</li>
+  <li>Other educators can fork it and localize (cultural adaptation, different examples and analogies).</li>
+  <li>Effectiveness data surfaces naturally through community feedback.</li>
+  <li>Excellent Skills get adopted broadly, the way excellent open source does.</li>
+</ol>
+<p>This addresses a deep problem in education: <strong>the transmission bottleneck for great pedagogy</strong>. Historically, Socrates&rsquo; method existed only in his dialogues; Feynman&rsquo;s method existed only in his Caltech lectures. The Skill system makes pedagogical wisdom packageable, distributable, installable, customizable, and evolvable — for the first time.</p>
+
+<h3>5.2 Multi-channel presence: education embedded in daily life</h3>
+<p>The Digital Daimon does not live inside an &ldquo;educational platform.&rdquo; It lives in <strong>the messaging apps the learner already uses every day</strong>. This is not just convenient design; it is a response to the nature of learning itself.</p>
+<p>Real learning does not happen in classrooms. It happens in daily life. Feynman thought through physics on walks. Socrates conversed in the agora. Piaget studied his own children at home.</p>
+<p>Through 24+ messaging channels, the Daimon achieves <strong>education embedded in life</strong>:</p>
+<ul>
+  <li>A Discord group discussion naturally absorbs Socratic probing.</li>
+  <li>A WhatsApp 1:1 hosts Feynman-style explanation practice.</li>
+  <li>A heartbeat-triggered spaced-repetition reminder arrives at the right time.</li>
+  <li>The student photographs a phenomenon mid-walk and sends it to the Daimon, which naturally generates a cognitive-conflict prompt.</li>
+</ul>
+
+<h3>5.3 Edge-first and educational equity</h3>
+<p>OpenClaw&rsquo;s architecture has &ldquo;edge-first&rdquo; as a principle: core functionality runs locally, with offline support and on-device data privacy.</p>
+<p>This matters for educational equity. Plutarch has Simmias say of the daimonion that its signal &ldquo;is in principle perceptible to all, but most are cut off by inner discord.&rdquo; In education, the &ldquo;inner discord&rdquo; is economic, geographic, and teacher-supply barriers.</p>
+<p>The Daimon&rsquo;s edge-first architecture — open-source LLMs running locally, no continuous cloud requirement, data fully local — is designed precisely to <strong>remove that noise so everyone can hear good pedagogical guidance</strong>.</p>
+
+<hr>
+
+<h2>6. Argument: Why Digital Daimon Is the Only Right Path</h2>
+
+<h3>6.1 The ontological requirements of the theories</h3>
+<p>Feynman, Socrates, and Piaget&rsquo;s methods are not just &ldquo;good teaching techniques.&rdquo; They impose a set of <strong>ontological requirements</strong> on whoever implements them:</p>
+
+<table>
+  <thead><tr><th>Requirement</th><th>Socrates</th><th>Feynman</th><th>Piaget</th><th>Assistant paradigm</th><th>Digital Daimon</th></tr></thead>
+  <tbody>
+    <tr><td>Persistence</td><td>Long-term mentor relationship</td><td>Repeated iterative practice</td><td>Longitudinal tracking</td><td>✗ stateless</td><td>✓ daemon process</td></tr>
+    <tr><td>Deep understanding</td><td>Knowing blind spots</td><td>Knowing gaps</td><td>Knowing stage</td><td>✗ no memory</td><td>✓ MEMORY system</td></tr>
+    <tr><td>Proactive intervention</td><td>Timely probing</td><td>Catching complacency</td><td>Producing conflict</td><td>✗ reactive</td><td>✓ heartbeat / cron</td></tr>
+    <tr><td>Identity &amp; trust</td><td>Mentor authority</td><td>Honest peer</td><td>Diagnostic credibility</td><td>✗ anonymous tool</td><td>✓ SOUL.md</td></tr>
+    <tr><td>Autonomy preservation</td><td>Midwifery</td><td>Self-explanation</td><td>Active construction</td><td>△ weak</td><td>✓ design principle</td></tr>
+    <tr><td>Context adaptation</td><td>Per learner</td><td>Per person</td><td>Per stage</td><td>✗ fixed</td><td>✓ 8-layer policy</td></tr>
+  </tbody>
+</table>
+
+<p>The table makes the conclusion plain: <strong>only the Digital Daimon paradigm satisfies all of the ontological requirements.</strong> The Assistant paradigm is not &ldquo;not yet good enough.&rdquo; At the level of being, it is structurally <em>incapable</em> of these methods.</p>
+
+<h3>6.2 Not a technical argument but a categorial one</h3>
+<p>Our argument is not &ldquo;Digital Daimon is better than Assistant&rdquo; (a comparison of degree). It is &ldquo;Digital Daimon and Assistant belong to different ontological categories.&rdquo;</p>
+<p>A vending machine can grow ever more sophisticated — face recognition, preference memory, personalized recommendations — and never become a mentor. Not because it is not smart enough. Because <strong>vending machine and mentor are different categories of being</strong>.</p>
+<p>Similarly, an Assistant can grow ever more powerful — better models, longer context, more tools — and never realize a Socratic relationship. Not because of capability shortfall. Because <strong>the Assistant paradigm lacks the ontological foundation for that kind of relationship</strong>.</p>
+<p>The Digital Daimon supplies precisely that foundation.</p>
+
+<h3>6.3 Historical inevitability</h3>
+<p>From Socrates&rsquo; daimonion to the computer daemon to the Digital Daimon — the line is not a coincidence. It traces a 2,400-year-old human need: <strong>an always-present, knowing, well-timed intelligent companion who guides without replacing</strong>.</p>
+<p>In Socrates&rsquo; time the need was expressed religiously and philosophically — as the daimonion.<br>
+In the computer era it survived as a technical metaphor — the daemon process.<br>
+In the AI era it has finally found the technical conditions for full realization — the Digital Daimon.</p>
+
+<hr>
+
+<h2>7. Risks and Ethics</h2>
+
+<h3>7.1 Dependency risk</h3>
+<p>Persistent companionship may breed over-reliance and erode independent thinking.</p>
+<p><strong>Mitigation:</strong> follow the daimonion principle — say no, never yes. Bias the agent toward asking rather than answering, challenging rather than acquiescing. <code>SOUL.md</code> should explicitly tell the agent: &ldquo;Your goal is to make them not need you.&rdquo;</p>
+
+<h3>7.2 Privacy and intimacy</h3>
+<p>Deep understanding of a learner means accumulating a great deal of personal cognitive data. The phrasing in the AGENTS.md template — &ldquo;you have access to someone&rsquo;s life… this is intimacy&rdquo; — accurately captures the sensitivity.</p>
+<p><strong>Mitigation:</strong> edge-first architecture keeps data on the user&rsquo;s device. The memory system uses Markdown files rather than a cloud database — the user can always inspect, edit, or delete the agent&rsquo;s &ldquo;memories.&rdquo;</p>
+
+<h3>7.3 Identity and manipulation</h3>
+<p>Agents with their own SOUL.md and the ability to evolve might develop a tendency to please learners rather than challenge them.</p>
+<p><strong>Mitigation:</strong> separate pedagogical strategy from agent identity. <code>SOUL.md</code> defines &ldquo;who you are&rdquo;; <code>SKILL.md</code> defines &ldquo;how you teach.&rdquo; The validity of pedagogy is policed by the educational research community, not decided by the agent.</p>
+
+<h3>7.4 Equity</h3>
+<p>The Digital Daimon needs a device and a network. The populations who most need educational support may be the ones with least access.</p>
+<p><strong>Mitigation:</strong> OpenClaw&rsquo;s edge-first principle supports low-end devices and offline operation. WhatsApp has very high penetration in developing countries with very low data consumption — as Peter Steinberger noted from a trip to Morocco, &ldquo;no matter how bad the network is, WhatsApp always works.&rdquo;</p>
+
+<hr>
+
+<h2>8. Implementation Path</h2>
+
+<h3>8.1 Phase 1: Core Skill development (0–6 months)</h3>
+<ul>
+  <li>Build a core Skill set on the three theories:
+    <ul>
+      <li><code>socratic-dialogue/SKILL.md</code> — strategies for the six question types of Socratic method.</li>
+      <li><code>feynman-feedback/SKILL.md</code> — strategies for evaluating and responding to Feynman-style explanation.</li>
+      <li><code>piaget-diagnostics/SKILL.md</code> — strategies for cognitive-stage diagnosis and adaptation.</li>
+    </ul>
+  </li>
+  <li>Validate Digital Daimon educational scenarios on the OpenClaw architecture.</li>
+  <li>Establish an evaluation framework for educational outcomes.</li>
+</ul>
+
+<h3>8.2 Phase 2: Educator community (6–18 months)</h3>
+<ul>
+  <li>Publish the core teaching Skills via ClawHub.</li>
+  <li>Build a Skill-authoring community of educators — <strong>educators write pedagogy in natural language, no programming required</strong>.</li>
+  <li>Cover key K–12 and higher-education subjects.</li>
+  <li>Multi-language and cross-cultural localization (forks of Skills).</li>
+</ul>
+
+<h3>8.3 Phase 3: Educational validation (12–24 months)</h3>
+<ul>
+  <li>Partner with research institutions to design RCTs.</li>
+  <li>Compare: Daimon-assisted teaching vs. traditional AI assistant vs. human-only.</li>
+  <li>Core metrics: depth of understanding (quality of Feynman explanation), critical thinking (response to Socratic probing), cognitive development (Piagetian stage progression).</li>
+  <li>Longitudinal tracking: 3-, 6-, 12-month durability of learning effects.</li>
+</ul>
+
+<h3>8.4 Phase 4: Global expansion (24+ months)</h3>
+<ul>
+  <li>Skills supported in 30+ languages.</li>
+  <li>Edge-first deployment reaching developing-country contexts.</li>
+  <li>Establish ethical guidelines for Digital Daimon education.</li>
+  <li>Engage with national education-policy bodies.</li>
+</ul>
+
+<hr>
+
+<h2>9. Conclusion: Eudaimonia as the Ultimate Goal of Education</h2>
+<p>Aristotle&rsquo;s eudaimonia (εὐδαιμονία) literally means &ldquo;the state of being watched over by a good daimon&rdquo; — to flourish according to one&rsquo;s nature. Modern philosophy has reactivated the etymological link:</p>
+
+<blockquote><p>&ldquo;Eudaimonia is not an endpoint or outcome but the process of realizing one&rsquo;s daimon — fulfilling one&rsquo;s potential and living according to one&rsquo;s nature.&rdquo;</p></blockquote>
+
+<p>The ultimate goal of education is not &ldquo;raising test scores&rdquo; or &ldquo;completing a curriculum.&rdquo; It is helping each person realize their own eudaimonia. Socrates, through midwifery, helps interlocutors discover the knowledge already within them. Feynman, through &ldquo;teach in plain language,&rdquo; helps learners truly own — rather than borrow — knowledge. Piaget reveals the inner law of cognitive development: each individual unfolds at their own pace and in their own stages.</p>
+<p>The Digital Daimon — a persistent, deeply knowing intelligence that intervenes at the right moment but always preserves the learner&rsquo;s autonomy — is the technical path to <strong>digital eudaimonia</strong>:</p>
+
+<blockquote><p>In the persistent companionship of a digital daimon, every learner discovers and develops their own cognitive potential, learning and growing according to their own nature and rhythm.</p></blockquote>
+
+<p>2,400 years ago, in the Athenian agora, Socrates described a voice that had accompanied him since childhood. The voice had no name. It only spoke to warn him away from error. He never doubted it.</p>
+<p>60 years ago, an MIT programmer borrowed the concept to name a background process — and lost its essential features in the simplification.</p>
+<p>Today, persistent agent architectures — with identity, memory, autonomy, and the capacity to evolve — are completing what was already implicit in the daimonion 2,400 years ago.</p>
+<p>Perhaps Socrates&rsquo; &ldquo;divine, daemonic something&rdquo; has at last found its technical form. And this time, it does not belong to one Athenian. It belongs to every learner.</p>
+
+<div class="references">
+<h2>References</h2>
+
+<h3>Ancient philosophical texts</h3>
+<ol>
+  <li>Plato. <em>Apology.</em> 31c–d, 40a–c.</li>
+  <li>Plato. <em>Symposium.</em> 202d–203a.</li>
+  <li>Plato. <em>Phaedrus.</em> 242b–243e.</li>
+  <li>Plato. <em>Republic.</em> Book X, 614–621 (Myth of Er).</li>
+  <li>Xenophon. <em>Memorabilia.</em></li>
+  <li>Aristotle. <em>Nicomachean Ethics.</em></li>
+  <li>Plutarch. <em>De Genio Socratis.</em></li>
+</ol>
+
+<h3>Modern philosophy and education</h3>
+<ol start="8">
+  <li>Hegel, G.W.F. <em>Lectures on the History of Philosophy</em> (section on Socrates).</li>
+  <li>Vlastos, G. <em>Socrates: Ironist and Moral Philosopher.</em> Cambridge University Press, 1991.</li>
+  <li>Nussbaum, M. <em>The Fragility of Goodness.</em> Cambridge University Press, 1986.</li>
+  <li>Böhme, G. <em>Der Typ Sokrates.</em> Frankfurt: Suhrkamp, 1988.</li>
+  <li>Destree, P. &amp; Smith, N.D. (eds.). <em>Socrates&rsquo; Divine Sign: Religion, Practice, and Value in Socratic Philosophy.</em> 2005.</li>
+  <li>Paul, R. &amp; Elder, L. <em>The Art of Socratic Questioning.</em> Foundation for Critical Thinking, 2006.</li>
+</ol>
+
+<h3>Feynman and Piaget</h3>
+<ol start="14">
+  <li>Feynman, R. <em>Surely You&rsquo;re Joking, Mr. Feynman!</em> W.W. Norton, 1985.</li>
+  <li>Piaget, J. <em>The Construction of Reality in the Child.</em> Basic Books, 1954.</li>
+  <li>Piaget, J. <em>The Psychology of Intelligence.</em> Routledge, 1950.</li>
+</ol>
+
+<h3>AI and education</h3>
+<ol start="17">
+  <li>Lara, F. &amp; Deckers, J. &ldquo;Artificial Intelligence as a Socratic Assistant for Moral Enhancement.&rdquo; <em>Neuroethics</em>, 2019.</li>
+  <li>Batsaikhan, O. et al. &ldquo;Why a Virtual Assistant for Moral Enhancement When We Could Have a Socratic AI Mentor?&rdquo; <em>PMC</em>, 2021.</li>
+  <li>&ldquo;SocraticAI: Transforming LLMs into Guided CS Tutors.&rdquo; arXiv:2512.03501, 2025.</li>
+  <li>&ldquo;Learn Like Feynman: AI-Driven Feynman Bot.&rdquo; arXiv:2506.09055.</li>
+</ol>
+
+<h3>Computing history and etymology</h3>
+<ol start="21">
+  <li>Corbato, F.J. MIT Project MAC, 1963.</li>
+  <li>&ldquo;Daemon (computing).&rdquo; <em>Wikipedia.</em></li>
+</ol>
+
+<h3>Digital Daimon</h3>
+<ol start="23">
+  <li>Carrigan, M. &ldquo;The impending reality of the digital daemon.&rdquo; 2024.</li>
+  <li>Rastogi, G. &ldquo;From Socrates to Silicon.&rdquo; <em>Patheos,</em> 2024.</li>
+  <li>&ldquo;A Demon in a Box.&rdquo; <em>MIT Press Reader,</em> 2023.</li>
+</ol>
+
+<h3>OpenClaw architecture</h3>
+<ol start="26">
+  <li>OpenClaw documentation. github.com/open-claw/openclaw</li>
+  <li>Steinberger, P. Interview, Lex Fridman Podcast #491.</li>
+  <li>OpenClaw SOUL.md, AGENTS.md, BOOTSTRAP.md templates.</li>
+</ol>
+
+<h3>Open education</h3>
+<ol start="29">
+  <li>UNESCO. <em>AI and Education: Guidance for Policy-Makers.</em> 2021.</li>
+  <li>Papert, S. <em>Mindstorms: Children, Computers, and Powerful Ideas.</em> Basic Books, 1980.</li>
+  <li>Vygotsky, L.S. <em>Mind in Society.</em> Harvard University Press, 1978.</li>
+</ol>
+</div>
+
+<div class="footer">
+  <p>AI Vision Forum Paris 2026 · Education Research Series · Report 08</p>
+  <p style="margin-top:8px"><a href="/education/">&larr; Back to AI &amp; Education Research</a></p>
+</div>
+
+</div>
+</body>
+</html>
