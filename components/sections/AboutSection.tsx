@@ -1,6 +1,7 @@
 "use client";
 
-import { Info, Users, Lock, Calendar, Handshake, Lightbulb, Target } from "lucide-react";
+import Link from "next/link";
+import { Info, Users, Lock, Calendar, Handshake, Lightbulb, Target, FileText, ArrowRight } from "lucide-react";
 import { EVENT_CONFIG } from "@/lib/constants";
 import { useTranslation } from "@/lib/i18n";
 
@@ -9,10 +10,37 @@ import { useTranslation } from "@/lib/i18n";
  */
 export function AboutSection() {
   const { t } = useTranslation();
+  const isCompleted = EVENT_CONFIG.status === "completed";
 
   return (
     <section id="about" className="py-24 px-4" style={{ background: "linear-gradient(180deg, rgba(160, 140, 190, 0.06) 0%, rgba(160, 140, 190, 0.03) 50%, transparent 100%)" }}>
       <div className="container mx-auto max-w-6xl">
+        {/* Post-event outcome banner (shown only after the forum) */}
+        {isCompleted && (
+          <div className="mb-12 rounded-2xl border border-primary/30 bg-primary/5 p-6 md:p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 rounded-full bg-primary/10 p-3 text-primary">
+                <FileText className="h-6 w-6" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-foreground">The forum is concluded</h3>
+                <p className="mt-2 text-muted-foreground">
+                  The forum convened on {EVENT_CONFIG.dateDisplay} in Paris under the Chatham House Rule.
+                  The Forum Report distills the day's four panels — Agentic AI Systems,
+                  Agentic AI in Education, Trusted Agentic AI, and Open Token &amp; Digital Public Goods —
+                  into a single shareable record, with the closing Paris Initiative on Open Token.
+                </p>
+                <Link
+                  href="/report"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+                >
+                  Read the Forum Report <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Section Header */}
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl">

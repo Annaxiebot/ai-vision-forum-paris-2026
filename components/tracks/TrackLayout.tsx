@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, BookOpen } from "lucide-react";
+import { ArrowLeft, BookOpen, FileText } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
+import { EVENT_CONFIG } from "@/lib/constants";
 
 interface TrackLayoutProps {
   title: string;
@@ -107,24 +108,45 @@ export function TrackLayout({
         </section>
       )}
 
-      {/* CTA */}
+      {/* CTA — gated on event status. Post-event: link to the forum report.
+            Pre-event: invite request. */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 to-secondary/5 p-12">
-            <h2 className="mb-4 text-2xl font-bold md:text-3xl">
-              {t.trackDetail.interestedInTrack}
-            </h2>
-            <p className="mb-6 text-muted-foreground">
-              {t.trackDetail.requestInvitationToJoin}
-            </p>
-            <a
-              href="https://register.gosim.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-full bg-accent px-8 py-4 font-semibold text-accent-foreground transition-all hover:scale-105 hover:shadow-xl hover:shadow-accent/30"
-            >
-              {t.trackDetail.requestInvitation}
-            </a>
+            {EVENT_CONFIG.status === "completed" ? (
+              <>
+                <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+                  Read the full forum report
+                </h2>
+                <p className="mb-6 text-muted-foreground">
+                  Five high-conviction claims, seven headline findings, and the
+                  Paris Initiative — alongside every panel writeup.
+                </p>
+                <Link
+                  href="/report"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 font-semibold text-primary-foreground transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/30"
+                >
+                  <FileText className="h-5 w-5" /> Open the report
+                </Link>
+              </>
+            ) : (
+              <>
+                <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+                  {t.trackDetail.interestedInTrack}
+                </h2>
+                <p className="mb-6 text-muted-foreground">
+                  {t.trackDetail.requestInvitationToJoin}
+                </p>
+                <a
+                  href="https://register.gosim.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-full bg-accent px-8 py-4 font-semibold text-accent-foreground transition-all hover:scale-105 hover:shadow-xl hover:shadow-accent/30"
+                >
+                  {t.trackDetail.requestInvitation}
+                </a>
+              </>
+            )}
           </div>
         </div>
       </section>

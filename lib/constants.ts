@@ -15,7 +15,97 @@ export const EVENT_CONFIG = {
   scale: "100–150 invited participants",
   format: "Invitation-only",
   rule: "Chatham House Rule",
-  domain: "paris2026.visionforum.ai"
+  domain: "paris2026.visionforum.ai",
+  // Lifecycle state. Drives countdown vs. archive rendering across the site.
+  // Switch to 'completed' after the forum concludes.
+  status: "completed" as "upcoming" | "completed",
+  // Post-event archive assets (self-hosted under public/).
+  // PDF only — Word/.docx versions retired per Organizing Committee decision.
+  reportUrl: "/reports/forum-report.pdf",
+  reportUrlZh: "/reports/forum-report-zh.pdf",
+  recapPosterUrl: "/images/infographics/panel-1.png",
+  ogImageUrl: "/images/infographics/panel-1.png",
+  media: {
+    en: {
+      videos: [
+        {
+          url: "/media/paris-2026-overview-en.mp4",
+          title: "Human–AI Synergy: 2026 Vision",
+          duration: "9:24",
+          size: "45 MB",
+          description: "Visual summary of the day's four panels and the Paris Initiative.",
+          featured: true,
+        },
+        {
+          url: "/media/paris-2026-trailer-en.mp4",
+          title: "AI Vision Forum 2026 — Short Trailer",
+          duration: "1:38",
+          size: "10 MB",
+          description: "Ninety-second teaser of the forum's headline themes.",
+        },
+      ],
+      audios: [
+        {
+          url: "/media/paris-2026-trust-en.m4a",
+          title: "Engineered Trust in the Agentic Era",
+          duration: "22:05",
+          size: "41 MB",
+          description: "Long-form audio deep dive on verification, trust, and the deterministic control plane.",
+          featured: true,
+        },
+        {
+          url: "/media/paris-2026-economy-en.m4a",
+          title: "The Paris 2026 Agentic Economy",
+          duration: "23:44",
+          size: "44 MB",
+          description: "Deep dive on the Token-as-infrastructure thesis and the closing Paris Initiative.",
+        },
+        {
+          url: "/media/paris-2026-shift-en.m4a",
+          title: "The Shift to the Agentic Economy",
+          duration: "19:35",
+          size: "36 MB",
+          description: "A twenty-minute take on the CLAW stack and the move beyond LAMP.",
+        },
+      ],
+    },
+    zh: {
+      videos: [
+        {
+          url: "/media/paris-2026-overview-zh.mp4",
+          title: "2026 巴黎 AI 愿景论坛:构建人机协同",
+          duration: "9:54",
+          size: "63 MB",
+          description: "全天四个分论坛与《巴黎倡议》的视觉概览。",
+          featured: true,
+        },
+        {
+          url: "/media/paris-2026-policy-brief-zh.mp4",
+          title: "架构人机协同:战略政策简报",
+          duration: "6:54",
+          size: "34 MB",
+          description: "面向决策者的简要政策版本。",
+        },
+      ],
+      audios: [
+        {
+          url: "/media/paris-2026-verification-zh.m4a",
+          title: "加密验证与认知摩擦",
+          duration: "2:09",
+          size: "4 MB",
+          description: "关于验证、可信与认知摩擦的短片。",
+          featured: true,
+        },
+        {
+          url: "/media/paris-2026-verification-short-zh.m4a",
+          title: "硬核验证与认知阻力",
+          duration: "1:18",
+          size: "2 MB",
+          description: "验证主题的更短版本。",
+        },
+      ],
+    },
+  },
 } as const;
 
 export const TRACKS = [

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { COUNTDOWN_TARGET } from "@/lib/constants";
+import { COUNTDOWN_TARGET, EVENT_CONFIG } from "@/lib/constants";
 import { useTranslation } from "@/lib/i18n";
 
 interface TimeLeft {
@@ -48,6 +48,11 @@ export function CountdownTimer() {
 
     return () => clearInterval(timer);
   }, []);
+
+  // Post-event: hide the countdown entirely. The hero shows a "Held on …" pill instead.
+  if (EVENT_CONFIG.status === "completed") {
+    return null;
+  }
 
   return (
     <div className="flex items-center justify-center gap-4 md:gap-6">

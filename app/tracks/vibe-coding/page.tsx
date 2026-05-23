@@ -2,6 +2,7 @@
 
 import { Laptop } from "lucide-react";
 import { TrackLayout } from "@/components/tracks/TrackLayout";
+import { PostEventPanelContent } from "@/components/tracks/PostEventPanelContent";
 import { useTranslation } from "@/lib/i18n";
 
 export default function AgenticSystemsTrack() {
@@ -15,7 +16,9 @@ export default function AgenticSystemsTrack() {
       overview={t.trackVibeCoding.overview}
       keyTopics={t.trackVibeCoding.keyTopics}
     >
-      <div className="prose prose-invert max-w-none">
+      <PostEventPanelContent slug="vibe-coding" />
+
+      <div className="prose prose-invert max-w-none mt-16">
         <h2 className="text-2xl font-bold mb-4">{t.trackVibeCoding.spotlightTitle}</h2>
         <p className="text-muted-foreground">
           {t.trackVibeCoding.spotlightText}

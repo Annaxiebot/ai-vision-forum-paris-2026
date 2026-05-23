@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, MapPin, Handshake, Target, Users, Lock } from "lucide-react";
+import { ChevronDown, MapPin, Handshake, Target, Users, Lock, FileText, Headphones, Play, CheckCircle2 } from "lucide-react";
 import { CountdownTimer } from "./CountdownTimer";
 import { TypewriterText } from "./TypewriterText";
 import { EVENT_CONFIG } from "@/lib/constants";
@@ -12,6 +12,7 @@ import { useTranslation } from "@/lib/i18n";
  */
 export function HeroSection() {
   const { t } = useTranslation();
+  const isCompleted = EVENT_CONFIG.status === "completed";
 
   const handleScrollDown = () => {
     const tracksSection = document.querySelector("#tracks");
@@ -105,12 +106,24 @@ export function HeroSection() {
           <TypewriterText text={t.hero.tagline} delay={80} />
         </p>
 
-        {/* Event Date - Prominent Display */}
-        <div className="mb-6">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-primary drop-shadow-lg">
-            {t.hero.dateDisplay}
-          </p>
-        </div>
+        {/* Post-event status pill (only when completed) */}
+        {isCompleted && (
+          <div className="mb-6 flex justify-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2 text-sm font-semibold text-primary backdrop-blur">
+              <CheckCircle2 className="h-4 w-4" />
+              Held on {EVENT_CONFIG.dateDisplay}
+            </span>
+          </div>
+        )}
+
+        {/* Event Date - Prominent Display (hidden once event has occurred) */}
+        {!isCompleted && (
+          <div className="mb-6">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-primary drop-shadow-lg">
+              {t.hero.dateDisplay}
+            </p>
+          </div>
+        )}
 
         {/* Event details */}
         <div className="mb-12 flex flex-col items-center gap-2 text-base text-foreground/60 md:text-lg">
@@ -132,20 +145,54 @@ export function HeroSection() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <a
-            href="#about"
-            onClick={(e) => {
-              e.preventDefault();
-              const aboutSection = document.querySelector("#about");
-              if (aboutSection) {
-                aboutSection.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-            className="rounded-full border-2 border-foreground/20 bg-white/40 backdrop-blur px-8 py-4 text-lg font-semibold text-foreground transition-all hover:border-foreground/35 hover:bg-white/60 hover:shadow-lg"
-          >
-            {t.hero.learnMore}
-          </a>
+        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center sm:flex-wrap">
+          {isCompleted ? (
+            <>
+              <Link
+                href="/report"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-lg"
+              >
+                <FileText className="h-5 w-5" />
+                Read the Forum Report
+              </Link>
+              <a
+                href="/report#media"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector("#media")?.scrollIntoView({ behavior: "smooth" });
+                  // Fallback for first-paint: jump to /report's media section
+                  if (window.location.pathname !== "/report") {
+                    window.location.href = "/report#media";
+                  }
+                }}
+                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-foreground/20 bg-white/40 backdrop-blur px-8 py-4 text-lg font-semibold text-foreground transition-all hover:border-foreground/35 hover:bg-white/60 hover:shadow-lg"
+              >
+                <Play className="h-5 w-5" />
+                Watch the Recap
+              </a>
+              <Link
+                href="/report#media"
+                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-foreground/20 bg-white/40 backdrop-blur px-8 py-4 text-lg font-semibold text-foreground transition-all hover:border-foreground/35 hover:bg-white/60 hover:shadow-lg"
+              >
+                <Headphones className="h-5 w-5" />
+                Listen
+              </Link>
+            </>
+          ) : (
+            <a
+              href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                const aboutSection = document.querySelector("#about");
+                if (aboutSection) {
+                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="rounded-full border-2 border-foreground/20 bg-white/40 backdrop-blur px-8 py-4 text-lg font-semibold text-foreground transition-all hover:border-foreground/35 hover:bg-white/60 hover:shadow-lg"
+            >
+              {t.hero.learnMore}
+            </a>
+          )}
         </div>
 
         {/* Event badges */}

@@ -2,6 +2,7 @@
 
 import { Scale } from "lucide-react";
 import { TrackLayout } from "@/components/tracks/TrackLayout";
+import { PostEventPanelContent } from "@/components/tracks/PostEventPanelContent";
 import { useTranslation } from "@/lib/i18n";
 
 export default function GovernanceTrack() {
@@ -25,7 +26,9 @@ export default function GovernanceTrack() {
         },
       ]}
     >
-      <div className="prose prose-invert max-w-none">
+      <PostEventPanelContent slug="governance" />
+
+      <div className="prose prose-invert max-w-none mt-16">
         <h2 className="text-2xl font-bold mb-4">{t.trackGovernance.approachTitle}</h2>
         <p className="text-muted-foreground">
           {t.trackGovernance.approachText}

@@ -2,6 +2,7 @@
 
 import { GraduationCap } from "lucide-react";
 import { TrackLayout } from "@/components/tracks/TrackLayout";
+import { PostEventPanelContent } from "@/components/tracks/PostEventPanelContent";
 import { useTranslation } from "@/lib/i18n";
 
 export default function EducationTrack() {
@@ -21,7 +22,9 @@ export default function EducationTrack() {
         },
       ]}
     >
-      <div className="prose prose-invert max-w-none">
+      <PostEventPanelContent slug="education" />
+
+      <div className="prose prose-invert max-w-none mt-16">
         <h2 className="text-2xl font-bold mb-4">{t.trackEducation.whyMattersTitle}</h2>
         <p className="text-muted-foreground">
           {t.trackEducation.whyMattersText}

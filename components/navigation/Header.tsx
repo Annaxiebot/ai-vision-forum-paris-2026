@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X, Globe } from "lucide-react";
 import { Logo } from "@/components/branding/Logo";
 import { useTranslation, LOCALE_LABELS } from "@/lib/i18n";
+import { EVENT_CONFIG } from "@/lib/constants";
 
 /**
  * Sticky header navigation with mobile hamburger menu
@@ -15,13 +16,33 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { locale, cycleLocale, t } = useTranslation();
 
-  const navItems: { label: string; href: string; highlight: boolean; external?: boolean }[] = [
-    { label: t.nav.home, href: "/", highlight: false },
-    { label: t.nav.tracks, href: "/#tracks", highlight: false },
-    { label: t.nav.schedule, href: "/#schedule", highlight: false },
-    { label: t.nav.venue, href: "/#venue", highlight: false },
-    { label: t.nav.register, href: "https://register.gosim.org/", highlight: true, external: true },
-  ];
+  const isCompleted = EVENT_CONFIG.status === "completed";
+
+  // Post-event: keep Schedule + Venue as historical references; surface
+  // the forum's standing programmes (Initiative, Education); swap
+  // "Register" (closed) for "Report" (the new primary CTA).
+  // Pre-event: original navigation with live registration CTA, plus the
+  // same standing-programme links.
+  const navItems: { label: string; href: string; highlight: boolean; external?: boolean }[] = isCompleted
+    ? [
+        { label: t.nav.home, href: "/", highlight: false },
+        { label: t.nav.tracks, href: "/#tracks", highlight: false },
+        { label: t.nav.schedule, href: "/#schedule", highlight: false },
+        { label: t.nav.venue, href: "/#venue", highlight: false },
+        { label: "Initiative", href: "/initiative", highlight: false },
+        { label: "Education", href: "/education", highlight: false },
+        { label: "Essay", href: "/blog/double-exponential", highlight: false },
+        { label: "Report", href: "/report", highlight: true },
+      ]
+    : [
+        { label: t.nav.home, href: "/", highlight: false },
+        { label: t.nav.tracks, href: "/#tracks", highlight: false },
+        { label: t.nav.schedule, href: "/#schedule", highlight: false },
+        { label: t.nav.venue, href: "/#venue", highlight: false },
+        { label: "Initiative", href: "/initiative", highlight: false },
+        { label: "Education", href: "/education", highlight: false },
+        { label: t.nav.register, href: "https://register.gosim.org/", highlight: true, external: true },
+      ];
 
   useEffect(() => {
     const handleScroll = () => {

@@ -2,6 +2,7 @@
 
 import { Globe } from "lucide-react";
 import { TrackLayout } from "@/components/tracks/TrackLayout";
+import { PostEventPanelContent } from "@/components/tracks/PostEventPanelContent";
 import { useTranslation } from "@/lib/i18n";
 
 export default function PublicGoodTrack() {
@@ -29,7 +30,9 @@ export default function PublicGoodTrack() {
         },
       ]}
     >
-      <div className="prose prose-invert max-w-none">
+      <PostEventPanelContent slug="public-good" />
+
+      <div className="prose prose-invert max-w-none mt-16">
         <h2 className="text-2xl font-bold mb-4">{t.trackPublicGood.humanityTitle}</h2>
         <p className="text-muted-foreground">
           {t.trackPublicGood.humanityText}

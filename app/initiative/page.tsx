@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft, ScrollText, Cpu, Globe2, Network, Users2, ListChecks } from "lucide-react";
+import { SignSection } from "@/components/initiative/SignSection";
 
 const PRINCIPLES = [
   {
@@ -142,10 +143,16 @@ export default function ParisInitiativePage() {
         </div>
       </section>
 
-      {/* Signature */}
+      {/* Sign the Initiative (live signatory count + 3 signing paths) */}
+      <SignSection />
+
+      {/* Stewarding organizations */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="rounded-2xl border-2 border-accent/40 bg-gradient-to-br from-accent/10 via-primary/5 to-secondary/10 p-12">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Stewarded by
+            </p>
             <div className="mb-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
               {SIGN_LINKS.map((link, i) => (
                 <span key={link.label} className="flex items-center gap-x-6">
