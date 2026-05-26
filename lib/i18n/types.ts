@@ -10,6 +10,10 @@ export interface Translations {
     venue: string;
     register: string;
     language: string;
+    initiative: string;
+    education: string;
+    essay: string;
+    report: string;
   };
 
   // Hero
@@ -254,5 +258,59 @@ export interface Translations {
   // Logo
   logo: {
     tagline: string;
+  };
+
+  // Education Page (/education)
+  educationPage: {
+    backToHome: string;
+    heroTitle: string;
+    heroSubtitle: string;
+    introP1: string;
+    introP2: string;
+    introP3: string;
+    featuredReportsTitle: string;
+    featuredReportsSubtitle: string;
+    readFullReportEn: string;
+    chineseOriginalLink: string;
+    closingTitle: string;
+    closingText: string;
+    reports: { label: string; title: string; summary: string }[];
+  };
+
+  // Initiative Page (/initiative)
+  initiativePage: {
+    backToHome: string;
+    badge: string;
+    heroTitle: string;
+    heroSubtitle: string;
+    preamble: string;
+    principles: { roman: string; title: string; body: string; extra?: string }[];
+    nextStepsTitle: string;
+    nextStepsIntro: string;
+    nextSteps: string[];
+    stewardedBy: string;
+    parisDate: string;
+  };
+
+  // Sign Section (on /initiative)
+  signSection: {
+    title: string;
+    intro: string;
+    beFirst: string;
+    signatories: string;
+    orgs: string;
+    individuals: string;
+    prTitle: string;
+    prDesc: string;
+    issueTitle: string;
+    issueDesc: string;
+    repoNote: string;
+    viewAll: string;
+  };
+
+  // Essay Page (/blog/double-exponential) — locale switch handled by parallel
+  // language components; this key is only for menu label.
+  essayPage: {
+    menuLabel: string;
   };
 }

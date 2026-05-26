@@ -9,6 +9,10 @@ export const fr: Translations = {
     venue: "Lieu",
     register: "S'inscrire",
     language: "Langue",
+    initiative: "Initiative",
+    education: "Éducation",
+    essay: "Essai",
+    report: "Rapport",
   },
 
   hero: {
@@ -353,5 +357,115 @@ export const fr: Translations = {
 
   logo: {
     tagline: "LES AGENTS FAÇONNENT DEMAIN",
+  },
+
+  // French translations for Education / Initiative / Essay are not yet
+  // authored — falling back to English content so the site still compiles
+  // and renders for FR users.
+  educationPage: {
+    backToHome: "Back to Home",
+    heroTitle: "AI & Education Research",
+    heroSubtitle:
+      "Why the great theories of learning have never reached every learner — and what changes when the agent, not the assistant, becomes the unit of educational software.",
+    introP1:
+      "For more than two thousand years, our deepest insights about how people learn have come from a small set of traditions: Socrates' dialogic method in 5th-century Athens, Piaget's constructivist account of cognitive development, Feynman's “teach-it-to-test-it” technique. They differ in vocabulary and era, but they converge on the same picture — the learner is an active constructor of knowledge; cognitive conflict drives change; understanding deepens through dialogue; every learner needs an interlocutor who knows them.",
+    introP2:
+      "These ideas are universally admired. They are almost never implemented at scale. The reason is structural, not philosophical: each method requires a sustained one-to-one relationship with someone who knows the learner well, has unbounded patience, and can adapt in real time. Industrial education was built on the opposite assumption — one teacher, many students, fixed pace, standardized assessment. The result is a two-millennia gap between what we know about learning and what classrooms can deliver.",
+    introP3:
+      "Agentic AI changes the constraint. A persistent agent — one that holds memory, intervenes on its own initiative, deepens its model of the learner over time, and runs at near-zero marginal cost — is the first technology in human history that can host the kind of relationship these theories require. It is not a faster textbook. It is the missing implementation layer. The three reports below trace the argument: from the shared structure of the classical theories, to the specific AI capabilities that unlock each one, to a concrete architecture for the agents that would carry them.",
+    featuredReportsTitle: "Featured Reports",
+    featuredReportsSubtitle:
+      "A three-part research arc — theory, practice, architecture. English versions below; the original Chinese is linked from each card.",
+    readFullReportEn: "Read full report (English)",
+    chineseOriginalLink: "中文原版",
+    closingTitle: "From assistants to daimons",
+    closingText:
+      "Education has always been a relationship problem disguised as a content problem. The work of the next decade is not to put more content in front of learners — it is to give every learner a persistent companion that knows them, asks the right question at the right time, and grows with them over years.",
+    reports: [
+      {
+        label: "Theory · Comparative Analysis",
+        title: "Commonalities of Feynman, Socrates, and Piaget",
+        summary:
+          "A structural analysis of three pedagogical traditions across two and a half millennia, identifying nine shared commitments — learner as active constructor, cognitive conflict as catalyst, metacognition, depth over coverage, individualization, dialogic interaction, simplification through analogy, the teacher as guide, and intrinsic motivation.",
+      },
+      {
+        label: "Practice · LLM Capabilities",
+        title: "How AI Transforms Educational Implementation",
+        summary:
+          "Maps the seven structural barriers that have prevented these theories from scaling — teacher supply, time, assessment, cost, culture — onto specific capabilities of large language models. Argues AI is the first technology able to deliver high-quality, personalized pedagogical interaction without proportional human cost.",
+      },
+      {
+        label: "Architecture · Persistent Agents",
+        title: "From Socrates' Daimon to Digital Daimon",
+        summary:
+          "A technical architecture paper. The Assistant paradigm — stateless, reactive, identity-less — cannot host the relationships these theories require. A Digital Daimon, built as a persistent agent with memory, autonomous intervention, deep learner understanding, and self-evolution, can. Six architectural properties, with their mapping to OpenClaw and to each pedagogical theory.",
+      },
+    ],
+  },
+
+  initiativePage: {
+    backToHome: "Back to Home",
+    badge: "The Paris Initiative",
+    heroTitle: "Consensus Statement on Agentic AI Infrastructure",
+    heroSubtitle: "AI Vision Forum Paris · May 4, 2026",
+    preamble:
+      "The following principles reflect consensus reached at AI Vision Forum Paris 2026 on the development of open, trusted, and sustainable agentic AI infrastructure.",
+    principles: [
+      {
+        roman: "I.",
+        title: "The Agentic Era Requires New Infrastructure",
+        body: "We recognize that the world is entering a new computing paradigm — the Agentic Era. The LAMP and Cloud eras assumed humans as the primary actors. Autonomous agents — operating continuously, acting on behalf of others, consuming resources at scale — require new models for identity, authorization, and economics.",
+      },
+      {
+        roman: "II.",
+        title: "AI Compute Should Be a Public Good",
+        body: "We believe that AI compute is becoming critical infrastructure — as essential as electricity — and should be broadly accessible to foster innovation, education, and open source sustainability. The Open Token model offers a concrete, operational path toward AI compute as a digital public good: a bridge connecting token donors (LLM providers) with organizations that need compute — open source projects, researchers, educators, and civil society.",
+      },
+      {
+        roman: "III.",
+        title: "A Healthy Agentic Ecosystem Benefits All",
+        body: "We observe that a thriving agentic ecosystem creates shared value: LLM providers benefit from increased token consumption and developer adoption; open source projects gain sustainable funding; society benefits from accessible AI infrastructure. This is not a zero-sum dynamic — broader access grows the ecosystem for everyone.",
+        extra:
+          "Leading AI organizations have already demonstrated that structured compute access programs generate real returns in goodwill, ecosystem development, and community trust. Open Token builds on this precedent with a neutral, open governance model that no single vendor controls.",
+      },
+      {
+        roman: "IV.",
+        title: "Multi-Stakeholder Collaboration Is Essential",
+        body: "We affirm that building trusted agentic AI infrastructure requires active collaboration across sectors: LLM providers, open source foundations, international organizations, academia, and civil society each bring capabilities the others lack. No single actor can do this alone. Progress comes from working together on concrete programs that demonstrate what collaboration can produce.",
+      },
+    ],
+    nextStepsTitle: "Next Steps",
+    nextStepsIntro:
+      "Based on this consensus, participants support the formation of a Preparatory Working Group to pursue the following goals:",
+    nextSteps: [
+      "Grow Open Token from a community initiative into a structured, sustainable program with clear governance, connecting token donors (LLM providers) with open source projects, educational institutions, and researchers seeking compute support.",
+      "Secure sustained, multi-cycle token donation commitments from LLM providers — piloting two or three recurring partnerships with open source foundations as proof of model, building toward a self-sustaining network.",
+      "Invite broader participation from additional token donors and recipient organizations across regions and sectors.",
+    ],
+    stewardedBy: "Stewarded by",
+    parisDate: "Paris · May 4, 2026",
+  },
+
+  signSection: {
+    title: "Sign the Initiative",
+    intro:
+      "If you publicly endorse the four principles and the next steps, you can add your signature. The Initiative lives on GitHub — every signature is a public, traceable pull request.",
+    beFirst: "Be the first to sign.",
+    signatories: "signatories",
+    orgs: "orgs",
+    individuals: "individuals",
+    prTitle: "Sign via Pull Request",
+    prDesc:
+      "Add your name to SIGNATORIES.md and open a PR. Preferred for GitHub-comfortable signers.",
+    issueTitle: "Sign via Issue Form",
+    issueDesc:
+      "Fill in a short GitHub Issue. We'll convert it into the next signatories PR.",
+    repoNote:
+      "The full Initiative text and signature history live in the public GitHub repo.",
+    viewAll: "View all signatories →",
+  },
+
+  essayPage: {
+    menuLabel: "Essay",
   },
 };

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Github, FileSignature, Users } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 const REPO = "aivisionforum/paris-2026-initiative";
 const SIGNATORIES_URL = `https://raw.githubusercontent.com/${REPO}/main/SIGNATORIES.md`;
@@ -45,6 +46,8 @@ function useSignatoryCount(): Counts | null {
 
 export function SignSection() {
   const counts = useSignatoryCount();
+  const { t } = useTranslation();
+  const ts = t.signSection;
 
   return (
     <section id="sign" className="py-16 px-4 scroll-mt-24">
@@ -52,22 +55,20 @@ export function SignSection() {
         <div className="rounded-2xl border-2 border-accent/40 bg-gradient-to-br from-accent/10 via-primary/5 to-secondary/10 p-8 md:p-12">
           <div className="mb-6 flex items-center gap-3">
             <FileSignature className="h-7 w-7 text-accent" />
-            <h2 className="text-2xl font-bold md:text-3xl">Sign the Initiative</h2>
+            <h2 className="text-2xl font-bold md:text-3xl">{ts.title}</h2>
           </div>
 
-          <p className="text-muted-foreground md:text-lg">
-            If you publicly endorse the four principles and the next steps, you can add your signature. The Initiative lives on GitHub — every signature is a public, traceable pull request.
-          </p>
+          <p className="text-muted-foreground md:text-lg">{ts.intro}</p>
 
           {counts && (
             <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-background px-5 py-2.5 text-sm font-semibold text-foreground">
               <Users className="h-4 w-4 text-accent" />
               {counts.total === 0 ? (
-                <>Be the first to sign.</>
+                <>{ts.beFirst}</>
               ) : (
                 <>
-                  <span className="text-accent">{counts.total}</span> signatories
-                  <span className="text-muted-foreground"> · {counts.orgs} orgs · {counts.individuals} individuals</span>
+                  <span className="text-accent">{counts.total}</span> {ts.signatories}
+                  <span className="text-muted-foreground"> · {counts.orgs} {ts.orgs} · {counts.individuals} {ts.individuals}</span>
                 </>
               )}
             </div>
@@ -83,10 +84,8 @@ export function SignSection() {
               <div className="mb-3 inline-flex items-center justify-center rounded-lg bg-primary/10 p-2.5 text-primary">
                 <Github className="h-5 w-5" />
               </div>
-              <h3 className="text-base font-bold group-hover:text-primary">Sign via Pull Request</h3>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Add your name to <code className="text-xs">SIGNATORIES.md</code> and open a PR. Preferred for GitHub-comfortable signers.
-              </p>
+              <h3 className="text-base font-bold group-hover:text-primary">{ts.prTitle}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{ts.prDesc}</p>
             </a>
 
             <a
@@ -98,24 +97,20 @@ export function SignSection() {
               <div className="mb-3 inline-flex items-center justify-center rounded-lg bg-primary/10 p-2.5 text-primary">
                 <FileSignature className="h-5 w-5" />
               </div>
-              <h3 className="text-base font-bold group-hover:text-primary">Sign via Issue Form</h3>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Fill in a short GitHub Issue. We'll convert it into the next signatories PR.
-              </p>
+              <h3 className="text-base font-bold group-hover:text-primary">{ts.issueTitle}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{ts.issueDesc}</p>
             </a>
           </div>
 
           <div className="mt-8 flex flex-col gap-3 border-t border-border pt-6 text-sm sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-muted-foreground">
-              The full Initiative text and signature history live in the public GitHub repo.
-            </p>
+            <p className="text-muted-foreground">{ts.repoNote}</p>
             <a
               href={VIEW_ALL_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
             >
-              <Github className="h-4 w-4" /> View all signatories →
+              <Github className="h-4 w-4" /> {ts.viewAll}
             </a>
           </div>
         </div>
